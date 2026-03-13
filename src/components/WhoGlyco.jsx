@@ -1,5 +1,5 @@
 
-import '../css/whoglyco.css'
+import '../css/WhoGlyco.css'
 
 const Card = ({ title, description, icon }) => (
 	<div className="who-card">
