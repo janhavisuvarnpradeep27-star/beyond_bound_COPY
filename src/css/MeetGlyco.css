@@ -16,12 +16,13 @@
 
 .glyco-page-title {
 	font-size: 56px;
-	font-weight: 900;
-	line-height: 1;
-	color: #0f1f3d;
-	letter-spacing: -0.02em;
+	font-weight: 400;
+	line-height: 1.06;
+	color: #15284b;
+	letter-spacing: -0.01em;
 	margin: 0 0 0px;
 	text-align: center;
+	font-synthesis: none;
 }
 
 .glyco-content {
@@ -39,11 +40,12 @@
 
 .glyco-title {
 	font-size: 52px;
-	font-weight: 900;
-	line-height: 1.15;
-	color: #0f1f3d;
-	letter-spacing: -0.02em;
+	font-weight: 400;
+	line-height: 1.1;
+	color: #15284b;
+	letter-spacing: -0.01em;
 	margin: 0;
+	font-synthesis: none;
 }
 
 .glyco-accent {

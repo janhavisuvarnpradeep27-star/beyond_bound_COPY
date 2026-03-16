@@ -1,30 +1,41 @@
 
 import '../css/trust.css'
-import whoGmp from '../assets/WHO-GMP.svg'
-import iso from '../assets/ISO.svg'
-import haccp from '../assets/HACCP.svg'
-import gmo from '../assets/GMO.svg'
+import whoGmp from '../../1 (1) 1.png'
+import iso from '../../iso 1.png'
+import qualityBadge from '../../Gemini_Generated_Image_iwrg9hiwrg9hiwrg (1) (14) 1.png'
+import haccp from '../../haccp 1.png'
+import gmo from '../../gmo 1.png'
 
 const certifications = [
 	{
 		id: 'who-gmp',
 		imageSrc: whoGmp,
 		imageAlt: 'WHO-GMP certification',
+		className: 'trust-icon--who',
 	},
 	{
 		id: 'iso',
 		imageSrc: iso,
 		imageAlt: 'ISO certification',
+		className: 'trust-icon--iso',
+	},
+	{
+		id: 'quality-assured',
+		imageSrc: qualityBadge,
+		imageAlt: 'Premium quality certification badge',
+		className: 'trust-icon--quality',
 	},
 	{
 		id: 'haccp',
 		imageSrc: haccp,
 		imageAlt: 'HACCP certification',
+		className: 'trust-icon--haccp',
 	},
 	{
 		id: 'non-gmo',
 		imageSrc: gmo,
 		imageAlt: 'Non-GMO certified',
+		className: 'trust-icon--gmo',
 	},
 ]
 
@@ -43,7 +54,7 @@ function TrustStandards() {
 							<img
 								src={cert.imageSrc}
 								alt={cert.imageAlt}
-								className="trust-icon"
+								className={`trust-icon ${cert.className}`}
 								loading="lazy"
 								decoding="async"
 							/>

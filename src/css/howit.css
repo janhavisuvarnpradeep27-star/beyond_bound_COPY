@@ -1,639 +1,508 @@
 .howit-section {
 	width: 100%;
-	background: #f8f9fb;
-	padding: 40px 15px;
+	background: #ffffff;
+	padding: 93px 100px 54px;
 	box-sizing: border-box;
 	overflow-x: hidden;
 }
 
 .howit-inner {
-	max-width: 1200px;
+	max-width: 1728px;
 	margin: 0 auto;
 	width: 100%;
 	box-sizing: border-box;
-	padding: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 66px;
 }
 
 .howit-header {
 	text-align: center;
-	margin-bottom: 40px;
-}
-
-.howit-badge {
-	display: inline-block;
-	font-size: 11px;
-	font-weight: 600;
-	letter-spacing: 0.1em;
-	text-transform: uppercase;
-	color: #2a7c7c;
-	background: rgba(42, 124, 124, 0.1);
-	padding: 8px 16px;
-	border-radius: 24px;
-	margin-bottom: 16px;
+	margin-bottom: 0;
 }
 
 .howit-title {
-	font-size: 42px;
-	font-weight: 800;
-	line-height: 1.2;
-	color: #0f1f3d;
-	letter-spacing: -0.02em;
-	margin: 0 0 12px;
-}
-
-.howit-subtitle {
-	font-size: 15px;
-	line-height: 1.6;
-	color: #6b7280;
-	max-width: 600px;
-	margin: 12px auto 0;
-}
-
-.howit-steps {
-	max-width: 800px;
-	margin: 0 auto 60px;
-}
-
-.howit-step {
-	display: flex;
-	gap: 20px;
-	background: #ffffff;
-	border: 1px solid #e5e7eb;
-	border-radius: 14px;
-	padding: 24px;
-	transition: all 0.25s ease;
-	margin-bottom: 24px;
-	box-sizing: border-box;
-	overflow: hidden;
-	width: 100%;
-}
-
-.howit-step:hover {
-	box-shadow: 0 8px 24px rgba(15, 31, 61, 0.12);
-	border-color: #d1d5db;
-	transform: translateY(-2px);
-}
-
-.howit-step-number {
-	min-width: 48px;
-	width: 48px;
-	height: 48px;
-	border-radius: 50%;
-	background: #2a7c7c;
-	color: #ffffff;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	font-size: 18px;
-	font-weight: 700;
+	margin: 0;
+	font-size: clamp(2.6rem, 3.3vw, 4rem);
+	font-weight: 400;
+	line-height: 1.04;
 	letter-spacing: -0.01em;
-	flex-shrink: 0;
+	color: #2f2f2f;
+	font-synthesis: none;
+	text-wrap: balance;
 }
 
-.howit-step-content {
-	flex: 1;
-	min-width: 0;
-	width: 100%;
-	overflow-wrap: break-word;
-	word-wrap: break-word;
-}
-
-.howit-step-header {
+.howit-bento {
 	display: flex;
-	align-items: flex-start;
-	gap: 14px;
-	margin-bottom: 12px;
-}
-
-.howit-step-icon {
-	width: 36px;
-	height: 36px;
-	border-radius: 8px;
-	display: flex;
+	flex-direction: column;
+	gap: 12px;
 	align-items: center;
-	justify-content: center;
-	flex-shrink: 0;
-	transition: all 0.2s ease;
 }
 
-.howit-icon-teal {
-	background: #cdf7f6;
-	color: #2a7c7c;
+.howit-top {
+	display: grid;
+	grid-template-columns: minmax(0, 604.8px) minmax(0, 823.2px);
+	gap: 12px;
+	width: 100%;
+	max-width: 1440px;
+	min-height: 712px;
 }
 
-.howit-icon-emerald {
-	background: #d1fae5;
-	color: #059669;
+.howit-bottom {
+	display: grid;
+	grid-template-columns: minmax(0, 764px) minmax(0, 662px);
+	gap: 12px;
+	width: 100%;
+	max-width: 1440px;
 }
 
-.howit-icon-cyan {
-	background: #cffafe;
-	color: #0891b2;
+.howit-step-stack {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	width: 100%;
+	max-width: 604.8px;
+	min-height: 712px;
+	height: auto;
 }
 
-.howit-step:hover .howit-step-icon {
-	transform: scale(1.08);
+.howit-card {
+	position: relative;
+	border-radius: 8px;
+	border: 1px solid rgba(222, 222, 222, 0.7);
+	background: linear-gradient(135deg, rgba(240, 240, 240, 0.72) 0%, rgba(255, 255, 255, 0.94) 52%, rgba(240, 240, 240, 0.4) 100%);
+	box-shadow: 0 4px 18px rgba(24, 32, 48, 0.04);
+	backdrop-filter: blur(20px);
+	overflow: hidden;
 }
 
-.howit-icon {
-	width: 20px;
-	height: 20px;
+.howit-card--step {
+	padding: 48px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-height: 350px;
+	height: 350px;
+	border-radius: 8px;
+	border: 1px solid rgba(222, 222, 222, 0.5);
+	background: rgba(240, 240, 240, 0.34);
+	box-shadow: none;
+	backdrop-filter: blur(20px);
 }
 
-.howit-step-title {
-	font-size: 18px;
+.howit-card-step,
+.howit-proof-text,
+.howit-approval-pill,
+.howit-btn {
+	font-family: Inter, 'Segoe UI', Arial, sans-serif;
+}
+
+.howit-card-step {
+	margin: 0;
+	font-family: 'Bree Serif', Georgia, serif;
+	font-size: clamp(2.65rem, 2.9vw, 3.35rem);
+	font-weight: 400;
+	line-height: 1.05;
+	letter-spacing: -0.01em;
+	color: #3f3f3f;
+}
+
+.howit-card-copy {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	max-width: 100%;
+}
+
+.howit-card--step .howit-card-copy {
+	max-width: 340px;
+}
+
+.howit-card-copy--feature {
+	max-width: 92%;
+	gap: 10px;
+	position: relative;
+	z-index: 2;
+}
+
+.howit-card-title {
+	margin: 0;
+	font-size: clamp(1.15rem, 1.25vw, 1.45rem);
 	font-weight: 700;
-	color: #1f2937;
+	line-height: 1.28;
+	letter-spacing: -0.02em;
+	color: #11808f;
+	font-family: Inter, 'Segoe UI', Arial, sans-serif;
+}
+
+.howit-card-description {
 	margin: 0;
-	line-height: 1.3;
-	overflow-wrap: break-word;
-	word-wrap: break-word;
-	word-break: break-word;
+	max-width: 30ch;
+	font-size: clamp(1rem, 1.15vw, 1.25rem);
+	font-weight: 400;
+	line-height: 1.58;
+	color: #676767;
+	font-family: Inter, 'Segoe UI', Arial, sans-serif;
 }
 
-.howit-step-description {
-	font-size: 14px;
-	line-height: 1.6;
-	color: #6b7280;
-	margin: 0;
-	overflow-wrap: break-word;
-	word-wrap: break-word;
-	word-break: break-word;
+.howit-card--feature {
+	min-height: 712px;
+	padding: 48px 48px 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background: linear-gradient(145deg, rgba(240, 240, 240, 0.78) 0%, rgba(255, 255, 255, 0.94) 48%, rgba(227, 232, 236, 0.6) 100%);
 }
 
-.howit-connector {
-	height: 16px;
-	margin-left: 24px;
-	border-left: 2px solid rgba(42, 124, 124, 0.15);
-	margin-bottom: 8px;
+.howit-feature-visual {
+	position: relative;
+	flex: 1;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	padding-top: 24px;
 }
 
-.howit-footer {
-	text-align: center;
-	padding-top: 20px;
+.howit-feature-image {
+	width: auto;
+	max-width: min(60%, 360px);
+	height: auto;
+	max-height: 560px;
+	object-fit: contain;
+	display: block;
+	filter: saturate(0) contrast(1.04);
+	position: relative;
+	z-index: 1;
 }
 
-.howit-footer-text {
-	font-size: 15px;
-	line-height: 1.6;
-	color: #4b5563;
-	margin-bottom: 24px;
+.howit-approval-pill {
+	position: absolute;
+	left: 56px;
+	bottom: 112px;
+	display: inline-flex;
+	align-items: center;
+	gap: 10px;
+	padding: 14px 22px;
+	border-radius: 999px;
+	background: rgba(255, 255, 255, 0.82);
+	color: #3d3d3d;
+	font-size: clamp(1rem, 1.1vw, 1.3rem);
+	font-weight: 500;
+	line-height: 1;
+	box-shadow: 0 14px 40px rgba(41, 46, 57, 0.08);
+	backdrop-filter: blur(16px);
+	z-index: 2;
+}
+
+.howit-approval-icon {
+	width: 24px;
+	height: 24px;
+	display: inline-flex;
+	color: #444a41;
+	flex-shrink: 0;
+}
+
+.howit-approval-icon svg {
+	width: 100%;
+	height: 100%;
 	display: block;
 }
 
-.howit-footer-text strong {
-	color: #1f2937;
-	font-weight: 700;
+.howit-card--promo {
+	min-height: 350px;
+	background: #101010;
+	border-color: rgba(16, 16, 16, 0.14);
+	box-shadow: none;
+}
+
+.howit-promo-background,
+.howit-promo-overlay,
+.howit-promo-copy {
+	position: absolute;
+	inset: 0;
+}
+
+.howit-promo-background {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+	filter: grayscale(1);
+}
+
+.howit-promo-overlay {
+	background: linear-gradient(90deg, rgba(0, 0, 0, 0.34) 0%, rgba(0, 0, 0, 0.18) 42%, rgba(0, 0, 0, 0.12) 100%);
+	z-index: 1;
+}
+
+.howit-promo-copy {
+	inset: auto auto 18px 18px;
+	width: min(calc(100% - 36px), 669.59px);
+	height: 254px;
+	padding: 0;
+	border-radius: 12px;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	z-index: 2;
+}
+
+.howit-promo-title {
+	margin: 0;
+	width: 100%;
+	max-width: 669.59px;
+	font-family: Inter, 'Segoe UI', Arial, sans-serif;
+	font-size: 48px;
+	font-weight: 500;
+	line-height: 57.6px;
+	letter-spacing: -1.92px;
+	color: #ffffff;
+	display: block;
+	text-shadow: 0 2px 16px rgba(0, 0, 0, 0.22);
+}
+
+.howit-card--cta {
+	min-height: 350px;
+	padding: 48px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+
+.howit-proof-text {
+	margin: 0;
+	max-width: 31ch;
+	font-size: clamp(1.05rem, 1.2vw, 1.25rem);
+	font-weight: 500;
+	line-height: 1.42;
+	letter-spacing: -0.01em;
+	color: #4a4a4a;
 }
 
 .howit-btn {
 	display: inline-flex;
 	align-items: center;
-	gap: 8px;
-	background: #2a7c7c;
+	justify-content: center;
+	gap: 11px;
+	min-width: 174px;
+	height: 58px;
+	padding: 0 24px;
+	border-radius: 8px;
+	background: linear-gradient(180deg, #178c98 0%, #0f7681 100%);
 	color: #ffffff;
-	font-size: 15px;
+	font-size: 1rem;
 	font-weight: 600;
-	padding: 12px 28px;
-	border-radius: 10px;
 	text-decoration: none;
-	transition: all 0.2s ease;
-	box-shadow: 0 2px 8px rgba(42, 124, 124, 0.2);
+	box-shadow: 0 10px 24px rgba(18, 124, 136, 0.22);
+	transition: transform 0.18s ease, box-shadow 0.18s ease, filter 0.18s ease;
 }
 
 .howit-btn:hover {
-	background: #1e5f5f;
 	transform: translateY(-2px);
-	box-shadow: 0 6px 16px rgba(42, 124, 124, 0.3);
+	box-shadow: 0 14px 28px rgba(18, 124, 136, 0.28);
+	filter: brightness(1.02);
 }
 
 .howit-btn:active {
-	transform: scale(0.96);
+	transform: translateY(0);
 }
 
-/* ── Tablet ── */
-@media (max-width: 1024px) {
+@media (max-width: 1280px) {
 	.howit-section {
-		padding: 56px 18px;
-	}
-
-	.howit-header {
-		margin-bottom: 48px;
-	}
-
-	.howit-badge {
-		font-size: 10px;
-		padding: 7px 14px;
-		margin-bottom: 12px;
-	}
-
-	.howit-title {
-		font-size: 32px;
-		margin-bottom: 10px;
-	}
-
-	.howit-subtitle {
-		font-size: 14px;
-		max-width: 550px;
-	}
-
-	.howit-steps {
-		max-width: 700px;
-		margin: 0 auto 48px;
-	}
-
-	.howit-step {
-		gap: 16px;
-		padding: 18px;
-		margin-bottom: 16px;
-	}
-
-	.howit-step-number {
-		width: 42px;
-		height: 42px;
-		font-size: 15px;
-	}
-
-	.howit-step-icon {
-		width: 32px;
-		height: 32px;
-	}
-
-	.howit-icon {
-		width: 18px;
-		height: 18px;
-	}
-
-	.howit-step-title {
-		font-size: 16px;
-	}
-
-	.howit-step-description {
-		font-size: 13.5px;
-	}
-
-	.howit-connector {
-		margin-left: 21px;
-		height: 14px;
-		margin-bottom: 7px;
-	}
-
-	.howit-footer-text {
-		font-size: 14px;
-		margin-bottom: 20px;
-	}
-
-	.howit-btn {
-		font-size: 14px;
-		padding: 10px 24px;
-		gap: 6px;
-	}
-}
-
-/* ── Mobile (768px) ── */
-@media (max-width: 768px) {
-	.howit-section {
-		padding: 40px 12px;
-		overflow-x: hidden;
+		padding: 76px 56px 52px;
 	}
 
 	.howit-inner {
-		width: 100%;
-		box-sizing: border-box;
+		gap: 52px;
 	}
 
-	.howit-header {
-		margin-bottom: 32px;
+	.howit-card--step,
+	.howit-card--cta,
+	.howit-card--feature {
+		padding-left: 36px;
+		padding-right: 36px;
 	}
 
-	.howit-badge {
-		font-size: 9px;
-		padding: 6px 12px;
-		margin-bottom: 10px;
-		letter-spacing: 0.08em;
+	.howit-card--step,
+	.howit-card--cta {
+		padding-top: 36px;
+		padding-bottom: 36px;
+	}
+
+	.howit-step-stack {
+		max-width: 100%;
+		height: auto;
+		min-height: 0;
+	}
+
+	.howit-card--feature {
+		min-height: 612px;
+	}
+
+	.howit-card--promo,
+	.howit-card--cta {
+		min-height: 300px;
+	}
+
+	.howit-feature-image {
+		max-height: 470px;
+	}
+
+	.howit-approval-pill {
+		left: 36px;
+		bottom: 82px;
+	}
+}
+
+@media (max-width: 960px) {
+	.howit-section {
+		padding: 64px 28px 46px;
+	}
+
+	.howit-inner {
+		gap: 40px;
+	}
+
+	.howit-bento {
+		align-items: stretch;
+	}
+
+	.howit-top,
+	.howit-bottom {
+		grid-template-columns: 1fr;
+		max-width: 100%;
+		min-height: 0;
+	}
+
+	.howit-step-stack {
+		max-width: 100%;
+		height: auto;
+		min-height: 0;
+	}
+
+	.howit-card--step,
+	.howit-card--promo,
+	.howit-card--cta,
+	.howit-card--feature {
+		min-height: auto;
+	}
+
+	.howit-card--feature {
+		padding-bottom: 24px;
+	}
+
+	.howit-feature-visual {
+		min-height: 360px;
+	}
+
+	.howit-feature-image {
+		max-width: min(72%, 320px);
+		max-height: 360px;
+	}
+
+	.howit-approval-pill {
+		left: 28px;
+		bottom: 32px;
+	}
+
+	.howit-promo-copy {
+		left: 18px;
+		right: 18px;
+		width: auto;
+		height: 220px;
+	}
+
+	.howit-promo-title {
+		max-width: 100%;
+		font-size: 38px;
+		line-height: 45px;
+		letter-spacing: -1.2px;
+	}
+}
+
+@media (max-width: 640px) {
+	.howit-section {
+		padding: 52px 16px 38px;
+	}
+
+	.howit-inner {
+		gap: 28px;
 	}
 
 	.howit-title {
-		font-size: 24px;
-		margin-bottom: 8px;
+		font-size: clamp(2rem, 9vw, 2.8rem);
 	}
 
-	.howit-subtitle {
-		font-size: 13px;
-		line-height: 1.5;
-		max-width: 100%;
-		word-wrap: break-word;
+	.howit-card--step,
+	.howit-card--cta,
+	.howit-card--feature {
+		padding: 24px;
 	}
 
-	.howit-steps {
-		max-width: 100%;
-		margin: 0 0 36px 0;
-		width: 100%;
-		box-sizing: border-box;
+	.howit-card-step {
+		font-size: 2rem;
 	}
 
-	.howit-step {
-		gap: 12px;
+	.howit-card-title {
+		font-size: 1.05rem;
+	}
+
+	.howit-card-description,
+	.howit-proof-text {
+		font-size: 0.95rem;
+	}
+
+	.howit-feature-visual {
+		min-height: 280px;
+	}
+
+	.howit-feature-image {
+		max-width: min(82%, 260px);
+		max-height: 280px;
+	}
+
+	.howit-approval-pill {
+		left: 18px;
+		bottom: 18px;
+		padding: 10px 14px;
+		font-size: 0.92rem;
+	}
+
+	.howit-approval-icon {
+		width: 20px;
+		height: 20px;
+	}
+
+	.howit-card--promo {
+		min-height: 220px;
+	}
+
+	.howit-promo-copy {
+		left: 16px;
+		right: 16px;
+		bottom: 16px;
+		width: auto;
+		height: auto;
+		min-height: 180px;
 		padding: 14px;
-		margin-bottom: 12px;
-		width: 100%;
-		box-sizing: border-box;
 	}
 
-	.howit-step-number {
-		width: 38px;
-		height: 38px;
-		font-size: 13px;
-		flex-shrink: 0;
-	}
-
-	.howit-step-header {
-		margin-bottom: 8px;
-		gap: 10px;
-	}
-
-	.howit-step-icon {
-		width: 28px;
-		height: 28px;
-		flex-shrink: 0;
-	}
-
-	.howit-icon {
-		width: 16px;
-		height: 16px;
-	}
-
-	.howit-step-title {
-		font-size: 14px;
-		word-wrap: break-word;
-	}
-
-	.howit-step-description {
-		font-size: 12px;
-		line-height: 1.5;
-		word-wrap: break-word;
-	}
-
-	.howit-connector {
-		margin-left: 19px;
-		height: 10px;
-		margin-bottom: 5px;
-	}
-
-	.howit-footer {
-		padding-top: 14px;
-		width: 100%;
-		box-sizing: border-box;
-	}
-
-	.howit-footer-text {
-		font-size: 12px;
-		margin-bottom: 14px;
-		word-wrap: break-word;
-	}
-
-	.howit-btn {
-		font-size: 13px;
-		padding: 9px 18px;
-		gap: 6px;
-	}
-
-	.howit-btn svg {
-		width: 16px;
-		height: 16px;
-		flex-shrink: 0;
-	}
-}
-
-/* ── Small Mobile (480px) ── */
-@media (max-width: 480px) {
-	.howit-section {
-		padding: 32px 10px;
-		overflow-x: hidden;
-	}
-
-	.howit-header {
-		margin-bottom: 28px;
-	}
-
-	.howit-badge {
-		font-size: 8px;
-		padding: 5px 10px;
-		margin-bottom: 8px;
-	}
-
-	.howit-title {
-		font-size: 21px;
-		line-height: 1.4;
-		margin-bottom: 8px;
-	}
-
-	.howit-subtitle {
-		font-size: 12px;
-		margin: 8px auto 0;
-		word-wrap: break-word;
-	}
-
-	.howit-steps {
+	.howit-promo-title {
 		max-width: 100%;
-		margin: 0 0 28px 0;
-		width: 100%;
-		box-sizing: border-box;
+		font-size: 28px;
+		line-height: 34px;
+		letter-spacing: -0.8px;
 	}
 
-	.howit-step {
-		gap: 10px;
-		padding: 12px;
-		margin-bottom: 10px;
-		width: 100%;
-		box-sizing: border-box;
-		flex-direction: column;
-	}
-
-	.howit-step-number {
-		width: 36px;
-		height: 36px;
-		font-size: 12px;
-		align-self: flex-start;
-		flex-shrink: 0;
-	}
-
-	.howit-step-header {
-		margin-bottom: 6px;
-		gap: 8px;
-		margin-left: 0;
-		margin-top: 0;
-	}
-
-	.howit-step-icon {
-		width: 26px;
-		height: 26px;
-		flex-shrink: 0;
-	}
-
-	.howit-icon {
-		width: 15px;
-		height: 15px;
-	}
-
-	.howit-step-title {
-		font-size: 13px;
-		word-wrap: break-word;
-	}
-
-	.howit-step-description {
-		font-size: 11px;
-		margin-left: 0;
-		word-wrap: break-word;
-	}
-
-	.howit-connector {
-		margin-left: 18px;
-		height: 8px;
-		margin-bottom: 4px;
-	}
-
-	.howit-footer {
-		padding-top: 14px;
-		width: 100%;
-		box-sizing: border-box;
-	}
-
-	.howit-footer-text {
-		font-size: 11px;
-		margin-bottom: 12px;
-		word-wrap: break-word;
+	.howit-card--cta {
+		gap: 24px;
 	}
 
 	.howit-btn {
-		font-size: 12px;
-		padding: 8px 16px;
-		gap: 5px;
-	}
-
-	.howit-btn svg {
-		width: 14px;
-		height: 14px;
-		flex-shrink: 0;
-	}
-}
-
-/* ── Extra Small Mobile (375px) ── */
-@media (max-width: 375px) {
-	.howit-section {
-		padding: 24px 8px;
-		overflow-x: hidden;
-	}
-
-	.howit-header {
-		margin-bottom: 20px;
-	}
-
-	.howit-badge {
-		font-size: 7px;
-		padding: 4px 8px;
-		margin-bottom: 6px;
-	}
-
-	.howit-title {
-		font-size: 18px;
-		line-height: 1.3;
-		margin-bottom: 6px;
-	}
-
-	.howit-subtitle {
-		font-size: 10px;
-		line-height: 1.4;
-		word-wrap: break-word;
-	}
-
-	.howit-steps {
-		margin: 0 0 20px 0;
-		width: 100%;
-		box-sizing: border-box;
-	}
-
-	.howit-step {
-		gap: 8px;
-		padding: 10px;
-		margin-bottom: 8px;
-		width: 100%;
-		box-sizing: border-box;
-		flex-direction: column;
-	}
-
-	.howit-step-number {
-		width: 32px;
-		height: 32px;
-		font-size: 10px;
-		align-self: flex-start;
-		flex-shrink: 0;
-	}
-
-	.howit-step-header {
-		margin-bottom: 4px;
-		gap: 6px;
-		margin-left: 0;
-		margin-top: 0;
-	}
-
-	.howit-step-icon {
-		width: 22px;
-		height: 22px;
-		flex-shrink: 0;
-	}
-
-	.howit-icon {
-		width: 12px;
-		height: 12px;
-	}
-
-	.howit-step-title {
-		font-size: 11px;
-		line-height: 1.3;
-		word-wrap: break-word;
-	}
-
-	.howit-step-description {
-		font-size: 9px;
-		line-height: 1.4;
-		margin-left: 0;
-		word-wrap: break-word;
-	}
-
-	.howit-step-content {
-		width: 100%;
-		overflow-wrap: break-word;
-	}
-
-	.howit-connector {
-		margin-left: 16px;
-		height: 6px;
-		margin-bottom: 3px;
-	}
-
-	.howit-footer {
-		padding-top: 10px;
-		width: 100%;
-		box-sizing: border-box;
-	}
-
-	.howit-footer-text {
-		font-size: 9px;
-		margin-bottom: 8px;
-		word-wrap: break-word;
-	}
-
-	.howit-btn {
-		font-size: 10px;
-		padding: 6px 12px;
-		gap: 4px;
-		white-space: nowrap;
-	}
-
-	.howit-btn svg {
-		width: 12px;
-		height: 12px;
-		flex-shrink: 0;
+		min-width: 150px;
+		height: 50px;
+		padding: 0 18px;
+		font-size: 0.95rem;
 	}
 }
