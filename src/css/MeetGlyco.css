@@ -39,7 +39,7 @@ gap: 18px;
 display: flex;
 align-items: center;
 justify-content: center;
-gap: 16.81px;
+gap: 14.06px;
 width: 332.21px;
 height: 55.03px;
 }
@@ -81,8 +81,8 @@ display: flex;
 flex-direction: column;
 width: 211px;
 height: 55.03px;
-gap: 6.59px;
-justify-content: center;
+gap: 6px;
+justify-content: flex-start;
 }
 
 .glyco-stars {
@@ -100,10 +100,9 @@ line-height: 0;
 width: 18.45px;
 height: 18.45px;
 display: inline-flex;
-align-items: flex-start;
-justify-content: flex-start;
-padding-top: 1.15px;
-padding-left: 1.16px;
+align-items: center;
+justify-content: center;
+padding: 0;
 box-sizing: border-box;
 }
 
@@ -123,10 +122,22 @@ align-items: center;
 justify-content: flex-start;
 font-size: 21.08px;
 line-height: 29.51px;
-font-weight: 500;
+font-weight: 400;
 letter-spacing: 0;
 font-family: 'Inter', 'Segoe UI', Roboto, Arial, sans-serif;
-color: #505a67;
+color: #636366;
+gap: 5px;
+white-space: nowrap;
+}
+
+.glyco-customers-count {
+	font-weight: 500;
+	color: #171717;
+}
+
+.glyco-customers-text {
+	font-weight: 400;
+	color: #636366;
 }
 
 .glyco-title {

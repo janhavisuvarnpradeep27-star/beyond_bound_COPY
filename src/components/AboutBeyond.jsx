@@ -31,13 +31,9 @@ function AboutBeyond() {
 						<div className="about-text-block">
 							<h2 id="about-beyond-title" className="about-title">About Beyond Bound</h2>
 							<p className="about-description">
-								Beyond Bound is formulated with premium Ayurvedic
-								<br />
-								herbs, carefully selected for their ability to support your
-								<br />
-								body&apos;s natural balance. Each ingredient is sourced from
-								<br />
-								trusted suppliers and undergoes rigorous quality testing.
+								Beyond Bound is formulated with premium Ayurvedic herbs, carefully selected for
+								their ability to support your body&apos;s natural balance. Each ingredient is sourced
+								from trusted suppliers and undergoes rigorous quality testing.
 							</p>
 						</div>
 

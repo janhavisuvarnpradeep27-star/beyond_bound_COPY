@@ -7,6 +7,7 @@ import MeetGlycomicsShowcase from './components/MeetGlycomicsShowcase'
 import WhoGlycomics from './components/WhoGlyco'
 import ProductDetailSection from './components/ProductDetailSection'
 import PurchaseAssurance from './components/PurchaseAssurance'
+import WhyDifferentSection from './components/WhyDifferentSection'
 import FAQ from './components/faq'
 import Footer from './components/footer'
 import Meet from './components/MeetGlyco'
@@ -22,6 +23,7 @@ function App() {
       <WhoGlycomics />
       <ProductDetailSection />
       <PurchaseAssurance />
+      <WhyDifferentSection />
       <HowItWorks />
       <FAQ />
       <Footer />

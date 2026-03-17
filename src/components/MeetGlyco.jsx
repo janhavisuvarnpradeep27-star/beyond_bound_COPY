@@ -38,7 +38,10 @@ function MeetGlycomics() {
 										</span>
 									))}
 								</div>
-								<p className="glyco-customers">1k+ Happy customers</p>
+								<p className="glyco-customers">
+									<span className="glyco-customers-count">1k+</span>
+									<span className="glyco-customers-text">Happy customers</span>
+								</p>
 							</div>
 						</div>
 
