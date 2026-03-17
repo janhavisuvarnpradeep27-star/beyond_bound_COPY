@@ -39,7 +39,7 @@ function FAQ() {
 			<div className="faq-inner">
 				<div className="faq-header">
 					<h2 className="faq-title">Frequently asked questions</h2>
-					<p className="faq-subtitle">Everything you need to know about Beyond Bound</p>
+					<p className="faq-subtitle">Everything you need to know about Glycomics</p>
 				</div>
 
 				<div className="faq-list">
@@ -67,7 +67,7 @@ function FAQ() {
 				<div className="faq-footer">
 					<i className="fa-regular fa-comment faq-footer-icon" aria-hidden="true" />
 					<p className="faq-footer-text">Still have questions?</p>
-					<button type="button" className="faq-footer-btn">Contact expert</button>
+					<button type="button" className="faq-footer-btn">Contact expert <span style={{ marginLeft: '6px' }}>→</span></button>
 				</div>
 			</div>
 		</section>

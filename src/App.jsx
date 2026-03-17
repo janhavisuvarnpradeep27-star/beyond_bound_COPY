@@ -11,6 +11,8 @@ import WhyDifferentSection from './components/WhyDifferentSection'
 import FAQ from './components/faq'
 import Footer from './components/footer'
 import Meet from './components/MeetGlyco'
+import LovedSection from './components/LovedSection'
+import TransformationSection from './components/TransformationSection'
 
 function App() {
   return (
@@ -24,8 +26,10 @@ function App() {
       <ProductDetailSection />
       <PurchaseAssurance />
       <WhyDifferentSection />
-      <HowItWorks />
       <FAQ />
+      <HowItWorks />
+      <LovedSection />
+      <TransformationSection />
       <Footer />
     </>
   )
