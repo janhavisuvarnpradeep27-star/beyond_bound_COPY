@@ -48,7 +48,9 @@ function WhoGlycomics() {
 	return (
 		<section className="who-section">
 			<div className="who-inner">
-				<h2 className="who-title">Who is Glycomics for?</h2>
+				<div className="who-title-wrap">
+					<h2 className="who-title">Who is Glycomics for?</h2>
+				</div>
 
 				<div className="who-cards-container">
 					{cardData.map((card, idx) => (
@@ -57,8 +59,15 @@ function WhoGlycomics() {
 				</div>
 
 				<div className="who-disclaimer">
+					<div className="who-disclaimer-icon" aria-hidden="true">
+						<svg viewBox="0 0 24 24" className="who-disclaimer-icon-svg" xmlns="http://www.w3.org/2000/svg">
+							<path d="M12 2L22 20H2L12 2Z" fill="currentColor" />
+							<path d="M12 8V13.8" stroke="white" strokeWidth="2.2" strokeLinecap="round" />
+							<circle cx="12" cy="17.2" r="1.3" fill="white" />
+						</svg>
+					</div>
 					<p className="who-disclaimer-text">
-						<strong>Medical Disclaimer:</strong> Glycomics is not intended to diagnose, treat, cure, or prevent any disease. Not a replacement for prescribed treatment. Consult your physician before use, especially if you have diabetes or take medication.
+						Glycomics is not intended to replace prescribed medication including Metformin or other glucose-lowering drugs. If you have diagnosed diabetes or are on medication, consult your physician before use. Not intended to diagnose, treat, cure, or prevent any disease.
 					</p>
 				</div>
 			</div>

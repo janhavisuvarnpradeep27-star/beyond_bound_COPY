@@ -1,51 +1,88 @@
 
 import '../css/MeetGlyco.css'
-import bottleImg from '../assets/bottle.png'
-
-const ingredients = [
-	'Berberine',
-	'Gurmar',
-	'Vijaysar',
-	'Jambu seeds',
-	'Karela',
-	'Haridra',
-	'Amakali',
-]
+import bottleImg from '../../Gemini_Generated_Image_iwrg9hiwrg9hiwrg (1) (5) 2.png'
+import reviewImageOne from '../../image 32.png'
+import reviewImageTwo from '../../image 33.png'
+import reviewImageThree from '../../image 34.png'
+import cartIcon from '../../Icon.png'
+import blurOverlayImg from '../../Blur.png'
 
 function MeetGlycomics() {
 	return (
-		<section className="glyco-section">
+		<section className="glyco-section" aria-labelledby="glyco-hero-title">
 			<div className="glyco-inner">
-				<h1 className="glyco-page-title">Meet Glycomics</h1>
-
 				<div className="glyco-content">
-					{/* LEFT CONTENT */}
-					<div className="glyco-text">
-						<h2 className="glyco-title">Know what goes into glycomics</h2>
-
-						<div className="glyco-rotating">
-							<div className="glyco-words">
-								{ingredients.map((ingredient, idx) => (
-									<div key={idx} className="glyco-word">{ingredient}</div>
-								))}
+					<div className="glyco-left">
+						<div className="glyco-proof">
+							<div className="glyco-avatars" aria-label="Customer profile photos">
+								<div className="glyco-avatar-shell">
+									<img src={reviewImageOne} alt="Happy customer 1" className="glyco-avatar" loading="lazy" decoding="async" />
+								</div>
+								<div className="glyco-avatar-shell">
+									<img src={reviewImageTwo} alt="Happy customer 2" className="glyco-avatar" loading="lazy" decoding="async" />
+								</div>
+								<div className="glyco-avatar-shell">
+									<img src={reviewImageThree} alt="Happy customer 3" className="glyco-avatar" loading="lazy" decoding="async" />
+								</div>
+							</div>
+							<div className="glyco-proof-copy">
+								<div className="glyco-stars" aria-label="5 star rating">
+									{Array.from({ length: 5 }).map((_, index) => (
+										<span key={`star-${index}`} className="glyco-star-shell" aria-hidden="true">
+											<svg
+												viewBox="0 0 17 16"
+												className="glyco-star-icon"
+											>
+												<path d="M8.5 0.9L10.4 5.66L15.53 6.03L11.61 9.41L12.89 14.35L8.5 11.45L4.11 14.35L5.39 9.41L1.47 6.03L6.6 5.66L8.5 0.9Z" />
+											</svg>
+										</span>
+									))}
+								</div>
+								<p className="glyco-customers">1k+ Happy customers</p>
 							</div>
 						</div>
 
-						<p className="glyco-description">
-							Glycomics is a <span className="glyco-highlight">clinically-informed Ayurvedic formulation</span> designed to support healthy glucose metabolism in adults.
-						</p>
+						<h1 id="glyco-hero-title" className="glyco-title">
+							Your metabolism
+							<span>has a switch &amp;</span>
+							<span>We found it.</span>
+						</h1>
 
-						<p className="glyco-description glyco-light">
-							It combines standardized botanical extracts with modern analytical validation to ensure consistency, purity, and responsible daily support.
+						<div className="glyco-price-row" aria-label="Pricing">
+							<div className="glyco-price-pair">
+								<span className="glyco-price-old">₹2400</span>
+								<span className="glyco-price-new">₹1925</span>
+							</div>
+							<span className="glyco-discount">Save 29%</span>
+						</div>
+
+						<button type="button" className="glyco-btn">
+							<span className="glyco-btn-content">
+								<img src={cartIcon} alt="" className="glyco-btn-icon" loading="lazy" decoding="async" aria-hidden="true" />
+								<span className="glyco-btn-label">Shop now</span>
+							</span>
+						</button>
+
+						<p className="glyco-note">
+							<span className="glyco-note-text">
+								Book now for <span className="glyco-note-strong">free consultation</span> with the experts
+							</span>
 						</p>
 					</div>
 
-					{/* RIGHT IMAGE */}
-					<div className="glyco-image-wrapper">
+					<div className="glyco-right">
 						<img
 							src={bottleImg}
-							alt="Glycomics Bottle"
-							className="glyco-image"
+							alt="Glycomics bottle"
+							className="glyco-image glyco-image--product"
+							loading="lazy"
+							decoding="async"
+						/>
+						<img
+							src={blurOverlayImg}
+							alt=""
+							aria-hidden="true"
+							className="glyco-image-blur"
 							loading="lazy"
 							decoding="async"
 						/>
