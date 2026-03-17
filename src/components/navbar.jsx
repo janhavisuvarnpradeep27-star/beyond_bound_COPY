@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import '../css/navbar.css'
 import beyondLogo from '../assets/beyond.svg'
+import GoogleSignIn from './GoogleSignIn'
 
 const scienceItems = [
 	{ title: 'Our Research', subtitle: 'Peer-reviewed studies' },
@@ -14,20 +15,20 @@ const aboutItems = [
 	{ title: 'Certifications', subtitle: 'Quality standards' },
 ]
 
-const loginMenuItems = [
+const accountMenuItems = [
 	'View Details',
 	'Delivery Status',
 	'Order History',
 	'Address',
 	'Help',
 	'Settings',
-	'Logout',
 ]
 
 function Navbar() {
 	const [activeMenu, setActiveMenu] = useState(null)
 	const [mobileOpen, setMobileOpen] = useState(false)
 	const [mobileSubMenu, setMobileSubMenu] = useState(null)
+	const [signedInUser, setSignedInUser] = useState(null)
 
 	const toggleMenu = (menuName) => {
 		setActiveMenu((prev) => (prev === menuName ? null : menuName))
@@ -119,11 +120,16 @@ function Navbar() {
 						</button>
 						{activeMenu === 'login' ? (
 							<div className="dropdown-panel login-panel">
-								{loginMenuItems.map((item) => (
-									<button key={item} type="button" className="login-item">
-										{item}
-									</button>
-								))}
+								<GoogleSignIn onUserChange={setSignedInUser} />
+								{signedInUser ? (
+									accountMenuItems.map((item) => (
+										<button key={item} type="button" className="login-item">
+											{item}
+										</button>
+									))
+								) : (
+									<p className="login-hint">Sign in to access your account options.</p>
+								)}
 							</div>
 						) : null}
 					</div>
