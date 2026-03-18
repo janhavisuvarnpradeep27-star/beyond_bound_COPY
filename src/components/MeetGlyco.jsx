@@ -4,7 +4,6 @@ import bottleImg from '../../Gemini_Generated_Image_iwrg9hiwrg9hiwrg (1) (5) 2.p
 import reviewImageOne from '../../image 32.png'
 import reviewImageTwo from '../../image 33.png'
 import reviewImageThree from '../../image 34.png'
-import cartIcon from '../../Icon.png'
 import blurOverlayImg from '../../Blur.png'
 
 function MeetGlycomics() {
@@ -61,8 +60,7 @@ function MeetGlycomics() {
 
 						<button type="button" className="glyco-btn">
 							<span className="glyco-btn-content">
-								<img src={cartIcon} alt="" className="glyco-btn-icon" loading="lazy" decoding="async" aria-hidden="true" />
-								<span className="glyco-btn-label">Shop now</span>
+								<span className="glyco-btn-label">Shop Now</span>
 							</span>
 						</button>
 

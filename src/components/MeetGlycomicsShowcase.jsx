@@ -26,7 +26,7 @@ function MeetGlycomicsShowcase() {
 						<div className="mgs-copy">
 							<h3 className="mgs-heading">
 								Know what goes into
-								<span className="mgs-heading-accent">glycomics</span>
+								<span className="mgs-heading-accent">Glycomics</span>
 							</h3>
 
 							<div

@@ -1,5 +1,5 @@
 import '../css/purchaseAssurance.css'
-import iconStar from '../../Icon (1).png'
+import iconStar from '../../Icon (9).png'
 import iconPromise from '../../Icon (2).png'
 import iconShipping from '../../Icon (3).png'
 import iconShield from '../../Icon (4).png'

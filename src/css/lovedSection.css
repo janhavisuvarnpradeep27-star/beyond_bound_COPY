@@ -89,13 +89,12 @@
 	padding: 50.6px;
 	border-radius: 37.95px;
 	background: #ffffff;
+	border: 1px solid #E5E7EB;
 	box-sizing: border-box;
 	display: flex;
 	flex-direction: column;
 	gap: 25.3px;
-	box-shadow:
-		0 6.32px 9.49px -6.32px rgba(0, 0, 0, 0.1),
-		0 15.81px 23.72px -4.74px rgba(0, 0, 0, 0.1);
+	box-shadow: none;
 }
 
 .loved-card-stars {
@@ -118,7 +117,7 @@
 	font-family: Inter, 'Segoe UI', Arial, sans-serif;
 	font-size: 25.3px;
 	font-weight: 400;
-	font-style: italic;
+	font-style: normal;
 	line-height: 41.11px;
 	letter-spacing: -0.49px;
 	color: #364153;

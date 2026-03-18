@@ -1,7 +1,6 @@
 import '../css/transformationSection.css'
 
 import transformationImage from '../../Gemini_Generated_Image_jeiry2jeiry2jeir 1.png'
-import starIcon from '../../Icon (7).png'
 
 const metrics = [
 	{
@@ -13,7 +12,6 @@ const metrics = [
 		id: 'rating',
 		value: '4.8',
 		label: 'Average Rating',
-		hasStar: true,
 	},
 	{
 		id: 'purity',
@@ -59,12 +57,7 @@ function TransformationSection() {
 				<div className="transform-metrics" role="list" aria-label="Product impact metrics">
 					{metrics.map((metric) => (
 						<div className="transform-metric" role="listitem" key={metric.id}>
-							<p className="transform-value">
-								{metric.value}
-								{metric.hasStar ? (
-									<img src={starIcon} alt="" aria-hidden="true" className="transform-inline-star" loading="lazy" decoding="async" />
-								) : null}
-							</p>
+							<p className="transform-value">{metric.value}</p>
 							<p className="transform-label">{metric.label}</p>
 						</div>
 					))}

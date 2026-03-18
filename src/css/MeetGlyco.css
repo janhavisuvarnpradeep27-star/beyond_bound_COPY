@@ -1,17 +1,17 @@
 .glyco-section {
 width: 100%;
 background: #ffffff;
-padding: 20px 0 8px;
+padding: 20px 0 96px;
 box-sizing: border-box;
 overflow-x: hidden;
 }
 
 .glyco-inner {
-max-width: 1728px;
+max-width: 1280px;
 margin: 0 auto;
 width: 100%;
 box-sizing: border-box;
-padding: 0 84px 0 95px;
+padding: 0 16px;
 }
 
 .glyco-content {
@@ -52,16 +52,18 @@ height: 42.16px;
 }
 
 .glyco-avatar-shell {
-width: 42.16px;
-height: 42.16px;
-border-radius: 21.08px;
-padding: 2.64px;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+padding: 0;
 box-sizing: border-box;
-background: #ebebeb;
+background: transparent;
+border: 2px solid #ffffff;
 display: flex;
 align-items: center;
 justify-content: center;
-margin-left: -10.56px;
+margin-left: -10px;
+overflow: hidden;
 }
 
 .glyco-avatar-shell:first-child {
@@ -69,9 +71,9 @@ margin-left: 0;
 }
 
 .glyco-avatar {
-width: 36.89px;
-height: 36.89px;
-border-radius: 18.45px;
+width: 100%;
+height: 100%;
+border-radius: 50%;
 object-fit: cover;
 display: block;
 }
@@ -110,7 +112,7 @@ box-sizing: border-box;
 width: 16.13px;
 height: 15.56px;
 display: block;
-fill: #0d7377;
+fill: #C9A87C;
 }
 
 .glyco-customers {
@@ -143,6 +145,7 @@ white-space: nowrap;
 .glyco-title {
 width: 750px;
 min-height: 204px;
+font-family: 'Bree Serif', Georgia, serif;
 font-size: 80px;
 font-weight: 400;
 line-height: 67.74px;
@@ -231,7 +234,7 @@ display: inline-flex;
 align-items: center;
 justify-content: center;
 gap: 10px;
-border-radius: 999px;
+border-radius: 6px;
 background: #0d7377;
 color: #f4ede0;
 cursor: pointer;
@@ -245,19 +248,13 @@ box-shadow:
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
-	width: 176px;
+	width: auto;
 	height: 33px;
-	gap: 14px;
-}
-
-.glyco-btn-icon {
-	width: 24px;
-	height: 24.39px;
-	display: block;
+	gap: 0;
 }
 
 .glyco-btn-label {
-	width: 138px;
+	width: auto;
 	height: 33px;
 	display: inline-flex;
 	align-items: center;
@@ -266,8 +263,7 @@ box-shadow:
 	font-size: 24px;
 	line-height: 32.9px;
 	font-weight: 700;
-	letter-spacing: 0.54px;
-	text-transform: uppercase;
+	letter-spacing: 0;
 	color: #f4ede0;
 }
 
@@ -324,9 +320,10 @@ display: block;
 }
 
 .glyco-image--product {
-	width: auto;
-	height: 811.6px;
-	max-width: none;
+	width: 100%;
+	height: 100%;
+	max-width: 100%;
+	max-height: 100%;
 	object-fit: contain;
 	position: relative;
 	z-index: 1;
@@ -379,6 +376,7 @@ max-width: 470px;
 @media (max-width: 900px) {
 .glyco-section {
 padding-top: 12px;
+	padding-bottom: 96px;
 }
 
 .glyco-content {
@@ -470,12 +468,7 @@ height: 44px;
 	.glyco-btn-content {
 		width: auto;
 		height: auto;
-		gap: 10px;
-	}
-
-	.glyco-btn-icon {
-		width: 18px;
-		height: 18px;
+		gap: 0;
 	}
 
 	.glyco-btn-label {

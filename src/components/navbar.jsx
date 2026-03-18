@@ -43,7 +43,7 @@ function Navbar() {
         <nav className="navbar">
           <div className="navbar-brand">
             <img src={beyondLogo} alt="Beyond Bound" className="navbar-logo" />
-            BEYOND BOUND<sup>®</sup>
+            BEYOND BOUND<sup className="logo-trademark">®</sup>
           </div>
 
           <ul className="navbar-links">
@@ -136,6 +136,9 @@ function Navbar() {
           <div
             className={`navbar-icons${mobileOpen ? " navbar-icons--hidden" : ""}`}
           >
+            <button type="button" className="signup-btn">
+              Sign Up
+            </button>
             <div className="login-menu">
               <button
                 type="button"

@@ -53,15 +53,16 @@
 	width: 483.93px;
 	height: 457.21px;
 	background: #ffffff;
-	border: 1.57px solid rgba(255, 255, 255, 0.6);
-	border-radius: 25.11px;
-	padding: 39px 64.35px 42px;
+	border: 1px solid #E5E7EB;
+	border-radius: 6px;
+	padding: 24px;
 	box-sizing: border-box;
 	text-align: center;
 	transition: transform 0.25s ease, box-shadow 0.25s ease;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	flex: 1 1 0;
 }
 
 .who-card:hover {
@@ -73,14 +74,15 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 87.89px;
-	height: 87.89px;
+	width: 88px;
+	height: 88px;
 	margin: 0 auto 62px;
-	background: #ffffff;
-	border: 1.57px solid rgba(229, 229, 229, 0.6);
+	background: #E8F2EE;
+	color: #0D7377;
+	border: none;
 	border-radius: 50%;
 	transition: all 0.3s ease;
-	flex: 0 0 auto;
+	flex-shrink: 0;
 }
 
 .who-card:hover .who-icon {
@@ -88,8 +90,8 @@
 }
 
 .who-icon svg {
-	width: 32px;
-	height: 32px;
+	width: 24px;
+	height: 24px;
 }
 
 .who-card-title {
@@ -122,7 +124,7 @@
 	width: 1242px;
 	min-height: 73px;
 	background: #ffffff;
-	border: 1px solid rgba(196, 0, 0, 0.4);
+	border: 1px solid #c7c7cc;
 	border-radius: 12px;
 	padding: 0;
 	box-sizing: border-box;
@@ -144,7 +146,7 @@
 	width: 19px;
 	height: 29px;
 	display: block;
-	color: #c40000;
+	color: #9ba3a7;
 }
 
 .who-disclaimer-text {
@@ -153,9 +155,10 @@
 	margin: 15.3px 0 13.7px 14px;
 	font-family: 'Inter', 'Segoe UI', Roboto, Arial, sans-serif;
 	font-size: 12px;
+	font-weight: 400;
 	line-height: 20.4px;
 	letter-spacing: 0;
-	color: rgba(196, 0, 0, 0.6);
+	color: #6b7280;
 }
 
 /* ── Tablet (1024px) ── */

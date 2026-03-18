@@ -138,31 +138,21 @@
 
 .transform-value {
 	margin: 0;
-	font-family: Inter, 'Segoe UI', Arial, sans-serif;
-	font-size: 50.22px;
-	line-height: 75.34px;
-	font-weight: 500;
+	font-family: 'Bree Serif', Georgia, serif;
+	font-size: 48px;
+	line-height: 1.1;
+	font-weight: 400;
 	color: #000000;
-	display: flex;
-	align-items: center;
-	gap: 6px;
-}
-
-.transform-inline-star {
-	width: 36px;
-	height: 36px;
-	object-fit: contain;
-	display: inline-block;
-	transform: translateY(-1px);
+	text-align: center;
 }
 
 .transform-label {
 	margin: 0;
 	font-family: Inter, 'Segoe UI', Arial, sans-serif;
-	font-size: 20.4px;
-	line-height: 30.6px;
+	font-size: 14px;
+	line-height: 1.4;
 	font-weight: 400;
-	color: #000000;
+	color: #6B7280;
 	text-align: center;
 }
 
@@ -240,13 +230,13 @@
 	}
 
 	.transform-value {
-		font-size: 38px;
-		line-height: 1.2;
+		font-size: 48px;
+		line-height: 1.1;
 	}
 
 	.transform-label {
-		font-size: 16px;
-		line-height: 1.35;
+		font-size: 14px;
+		line-height: 1.4;
 	}
 }
 
@@ -285,11 +275,6 @@
 	}
 
 	.transform-value {
-		font-size: 30px;
-	}
-
-	.transform-inline-star {
-		width: 24px;
-		height: 24px;
+		font-size: 48px;
 	}
 }

@@ -78,16 +78,17 @@
 }
 
 .mgs-heading-accent {
-	color: #2f5e4d;
+	font-family: 'Bree Serif', Georgia, serif;
+	color: #0F2744;
 }
 
 .mgs-ingredient {
 	margin: 0;
 	width: 417.42px;
 	height: 114.68px;
-	font-family: 'Tinos', 'Times New Roman', serif;
-	font-weight: 700;
-	font-style: italic;
+	font-family: 'Bree Serif', Georgia, serif;
+	font-weight: 400;
+	font-style: normal;
 	font-size: 66.09px;
 	line-height: 118.96px;
 	letter-spacing: 0;
@@ -166,8 +167,10 @@
 }
 
 .mgs-paragraph--primary strong {
-	font-weight: 700;
-	color: #0d7377;
+	font-family: 'Inter', 'Segoe UI', Roboto, Arial, sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	color: #0F2744;
 }
 
 .mgs-paragraph--secondary {

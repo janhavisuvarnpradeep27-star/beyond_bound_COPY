@@ -23,11 +23,13 @@
 }
 
 .trust-label {
+	font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
 	font-size: 11px;
-	font-weight: 500;
+	font-weight: 600;
 	line-height: 1.25;
-	letter-spacing: 0;
-	color: #b9c0c7;
+	letter-spacing: 2.5px;
+	text-transform: uppercase;
+	color: #0D7377;
 	margin: 0;
 	display: block;
 }
@@ -35,10 +37,11 @@
 .trust-title {
 	margin: 0;
 	max-width: 100%;
-	font-size: clamp(2rem, 3.55vw, 3.75rem);
+	font-family: 'Bree Serif', Georgia, serif;
+	font-size: 40px;
 	font-weight: 400;
-	line-height: 1.08;
-	letter-spacing: -0.01em;
+	line-height: 1.1;
+	letter-spacing: 0;
 	color: #15284b;
 	white-space: nowrap;
 	font-synthesis: none;
@@ -134,9 +137,9 @@
 
 	.trust-title {
 		max-width: 760px;
-		font-size: clamp(1.75rem, 7vw, 2.5rem);
+		font-size: 40px;
 		font-weight: 400;
-		line-height: 1.18;
+		line-height: 1.1;
 		white-space: normal;
 		text-wrap: balance;
 	}

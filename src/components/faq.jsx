@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import '../css/faq.css'
+import faqCtaIcon from '../../Icon (9).png'
 
 const faqs = [
 	{
@@ -54,18 +55,20 @@ function FAQ() {
 								onClick={() => toggle(i)}
 								aria-expanded={openIndex === i}
 							>
-								{faq.question}
-								<i className="fa-solid fa-chevron-down faq-icon" aria-hidden="true" />
+								<span className="faq-question-text">{faq.question}</span>
+								<svg viewBox="0 0 16 16" className="faq-icon" aria-hidden="true">
+									<path d="M3.5 6L8 10.5L12.5 6" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+								</svg>
 							</button>
-							{openIndex === i && (
+							<div className="faq-answer-wrap" aria-hidden={openIndex !== i}>
 								<p className="faq-answer">{faq.answer}</p>
-							)}
+							</div>
 						</div>
 					))}
 				</div>
 
 				<div className="faq-footer">
-					<i className="fa-regular fa-comment faq-footer-icon" aria-hidden="true" />
+					<img src={faqCtaIcon} alt="Support icon" className="faq-footer-icon" loading="lazy" decoding="async" />
 					<p className="faq-footer-text">Still have questions?</p>
 					<button type="button" className="faq-footer-btn">Contact expert <span style={{ marginLeft: '6px' }}>→</span></button>
 				</div>

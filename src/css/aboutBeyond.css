@@ -1,6 +1,7 @@
 .about-section {
 	width: 100%;
-	height: 933px;
+	min-height: 933px;
+	height: auto;
 	padding-left: 313.38px;
 	padding-right: 313.38px;
 	box-sizing: border-box;
@@ -33,13 +34,15 @@
 
 .about-right-frame {
 	width: 641px;
+	max-width: 100%;
 	min-height: 550.8px;
 	display: flex;
 	flex-direction: column;
 }
 
 .about-copy-stack {
-	width: 641px;
+	width: 100%;
+	max-width: 641px;
 	min-height: 466px;
 	display: flex;
 	flex-direction: column;
@@ -47,27 +50,38 @@
 }
 
 .about-pill {
-	width: 234.57px;
-	min-height: 57.68px;
-	padding: 13px 25px;
-	border-radius: 999px;
+	min-height: 40px;
+	padding: 10px 14px;
+	border-radius: 6px;
 	background: #e8f2ee;
-	box-shadow: 0 0 5.05px rgba(0, 0, 0, 0.25);
 	box-sizing: border-box;
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
+	gap: 8px;
+	align-self: flex-start;
 }
 
-.about-pill-image {
-	width: 184.57px;
-	height: 31.68px;
-	object-fit: contain;
+
+.about-pill-icon {
+	width: 14px;
+	height: 14px;
 	display: block;
+	fill: #0D7377;
+}
+
+.about-pill-text {
+	font-family: 'Inter', 'Segoe UI', Roboto, Arial, sans-serif;
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 1;
+	color: #0D7377;
+	white-space: nowrap;
 }
 
 .about-text-block {
-	width: 641px;
+	width: 100%;
+	max-width: 641px;
 	min-height: 319.03px;
 	display: flex;
 	flex-direction: column;
@@ -87,7 +101,8 @@
 
 .about-description {
 	margin: 0;
-	width: 641px;
+	width: 100%;
+	max-width: 641px;
 	min-height: 205px;
 	font-family: 'Inter', 'Segoe UI', Roboto, Arial, sans-serif;
 	font-size: 28px;
@@ -156,8 +171,7 @@
 
 	.about-right-frame,
 	.about-copy-stack,
-	.about-text-block,
-	.about-description {
+	.about-text-block {
 		width: 100%;
 	}
 

@@ -1,6 +1,5 @@
 import '../css/aboutBeyond.css'
 import aboutImage from '../../Gemini_Generated_Image_9ceczi9ceczi9cec 1 (1).png'
-import naturalBadgeImage from '../../Frame 2610589.png'
 
 function AboutBeyond() {
 	return (
@@ -19,13 +18,14 @@ function AboutBeyond() {
 				<div className="about-right-frame">
 					<div className="about-copy-stack">
 						<div className="about-pill">
-							<img
-								src={naturalBadgeImage}
-								alt="100% Natural"
-								className="about-pill-image"
-								loading="lazy"
-								decoding="async"
-							/>
+							<svg
+								className="about-pill-icon"
+								viewBox="0 0 16 16"
+								aria-hidden="true"
+							>
+								<path d="M8 0.75L9.86 5.22L14.68 5.62L11 8.73L12.12 13.5L8 10.87L3.88 13.5L5 8.73L1.32 5.62L6.14 5.22L8 0.75Z" />
+							</svg>
+							<span className="about-pill-text">100% Natural</span>
 						</div>
 
 						<div className="about-text-block">

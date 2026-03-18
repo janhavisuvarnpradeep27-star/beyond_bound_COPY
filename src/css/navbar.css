@@ -35,11 +35,14 @@
 }
 
 .navbar-brand sup {
-	font-size: 8px;
-	top: -1em;
-	position: relative;
-	left: 1px;
 	font-weight: 500;
+}
+
+.logo-trademark {
+	font-size: 0.55em;
+	line-height: 0;
+	vertical-align: super;
+	margin-left: 1px;
 }
 
 .navbar-logo {
@@ -74,18 +77,41 @@
 	cursor: pointer;
 	font-size: 17px;
 	font-weight: 500;
-	font-family: inherit;
+	font-family: "Inter", sans-serif;
 	color: #374151;
 	border-radius: 8px;
 	transition: background 0.15s, color 0.15s;
 }
 
 .menu-caret {
-	font-size: 11px;
+	font-size: 16px;
 	line-height: 1;
 	transform: translateY(1px);
 	color: #9ca3af;
 	transition: transform 0.2s;
+}
+
+.signup-btn {
+	height: 48px;
+	padding: 0 20px;
+	border: none;
+	border-radius: 6px;
+	background: #0D7377;
+	color: #ffffff;
+	font-family: "Inter", sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 1;
+	cursor: pointer;
+	transition: background 0.15s ease;
+}
+
+.signup-btn:hover {
+	background: #0b6669;
+}
+
+.signup-btn:active {
+	background: #09585b;
 }
 
 .menu-trigger:hover {
@@ -607,6 +633,10 @@
 	/* Show mobile menu */
 	.mobile-menu {
 		display: flex;
+	}
+
+	.signup-btn {
+		display: none;
 	}
 
 	.mega-panel {
