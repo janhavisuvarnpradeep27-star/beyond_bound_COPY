@@ -1,6 +1,6 @@
 .pds-section {
 	width: 100%;
-	min-height: 1093px;
+	height: 1093px;
 	padding: 128px 32px;
 	box-sizing: border-box;
 	background: #f5f5f5;
@@ -11,17 +11,19 @@
 .pds-container {
 	width: 1302px;
 	max-width: 100%;
-	min-height: 784px;
+	height: 784px;
 	display: flex;
 	gap: 52.08px;
 }
 
 .pds-gallery {
-	width: 751.67px;
+	width: 781.2px;
 	height: 784px;
 	display: flex;
 	gap: 13.02px;
 	align-items: center;
+	padding-left: 29.53px;
+	box-sizing: border-box;
 }
 
 .pds-thumbnails {
@@ -72,7 +74,7 @@
 	width: 641px;
 	height: 784px;
 	flex: 0 0 641px;
-	border-radius: 18.8px;
+	border-radius: 37px;
 	background: #f5f5f5;
 	display: flex;
 	align-items: center;
@@ -89,10 +91,10 @@
 
 .pds-details {
 	width: 468.72px;
-	min-height: 765.78px;
+	height: 765.78px;
 	display: flex;
 	flex-direction: column;
-	gap: 32.55px;
+	gap: 39.06px;
 }
 
 .pds-badges-row {
@@ -164,19 +166,21 @@
 .pds-title {
 	margin: 0;
 	font-family: 'Inter', 'Segoe UI', Roboto, Arial, sans-serif;
-	font-size: 49px;
-	line-height: 1;
+	font-size: 39.06px;
+	line-height: 41.01px;
 	font-weight: 500;
-	color: #08252a;
+	letter-spacing: -1.63px;
+	color: #061a1c;
 }
 
 .pds-price {
 	margin: 0;
 	font-family: 'Inter', 'Segoe UI', Roboto, Arial, sans-serif;
-	font-size: 24px;
-	line-height: 1;
+	font-size: 18.23px;
+	line-height: 18.23px;
 	font-weight: 500;
-	color: #0d0d0d;
+	letter-spacing: -0.78px;
+	color: #061a1c;
 }
 
 .pds-description-wrap {
@@ -262,6 +266,7 @@
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
+	padding: 0;
 }
 
 .pds-qty-btn--disabled,
@@ -276,7 +281,7 @@
 	font-family: 'Inter', 'Segoe UI', Roboto, Arial, sans-serif;
 	font-size: 40px;
 	line-height: 1;
-	font-weight: 400;
+	font-weight: 500;
 	color: #001d22;
 	width: 18.23px;
 	text-align: center;
@@ -302,9 +307,9 @@
 	font-family: 'Inter', 'Segoe UI', Roboto, Arial, sans-serif;
 	font-size: 15.62px;
 	font-weight: 500;
-	line-height: 18.75px;
+	line-height: 19px;
 	letter-spacing: -0.52px;
-	color: #061a1c;
+	color: #9ba3a7;
 }
 
 .pds-accordion-list {
@@ -339,16 +344,19 @@
 @media (max-width: 1320px) {
 	.pds-section {
 		padding: 72px 20px;
+		height: auto;
 	}
 
 	.pds-container {
 		width: 100%;
 		gap: 28px;
+		height: auto;
 	}
 
 	.pds-gallery {
 		width: calc(100% - 496px);
 		height: auto;
+		padding-left: 0;
 	}
 
 	.pds-details {
@@ -359,11 +367,12 @@
 @media (max-width: 980px) {
 	.pds-section {
 		padding: 40px 14px;
-		min-height: auto;
+		height: auto;
 	}
 
 	.pds-container {
 		flex-direction: column;
+		height: auto;
 	}
 
 	.pds-gallery,
