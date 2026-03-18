@@ -1,6 +1,7 @@
 import '../css/howit.css'
 import doctorApprovedImage from '../../image 18.png'
 import mechanismBackground from '../../Screenshot 2026-03-13 at 19.16.40 1.png'
+import doctorApprovedIcon from '../../Component 1.png'
 
 const steps = [
 	{
@@ -62,10 +63,13 @@ function HowItWorks() {
 								/>
 								<div className="howit-approval-pill">
 									<span className="howit-approval-icon" aria-hidden="true">
-										<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<circle cx="12" cy="12" r="10" fill="currentColor" />
-											<path d="M8 12.3L10.6 14.9L16.1 9.4" stroke="white" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
-										</svg>
+										<img
+											src={doctorApprovedIcon}
+											alt=""
+											className="howit-approval-icon-img"
+											loading="lazy"
+											decoding="async"
+										/>
 									</span>
 									Doctor Approved
 								</div>
@@ -96,10 +100,7 @@ function HowItWorks() {
 								Backed by 200+ peer-reviewed studies on berberine's metabolic effects
 							</p>
 							<a href="#" className="howit-btn">
-								Get Started
-								<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.25" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-									<path d="M5 12h14M12 5l7 7-7 7" />
-								</svg>
+								Get Started →
 							</a>
 						</article>
 					</div>

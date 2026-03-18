@@ -9,7 +9,7 @@ function Footer() {
 			<div className="site-footer__inner">
 				<div className="site-footer__grid">
 					<div className="site-footer__col">
-						<h3 className="site-footer__brand">BEYOND BOUND<sup>®</sup></h3>
+						<h3 className="site-footer__brand">BEYOND BOUND<span className="site-footer__brand-mark">©</span></h3>
 						<p className="site-footer__text">
 							Premium Ayurvedic supplements crafted with science-backed ingredients for your wellness journey.
 						</p>

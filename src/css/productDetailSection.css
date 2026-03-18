@@ -253,13 +253,23 @@
 	height: 52.08px;
 	border-radius: 10.42px;
 	background: #ffffff;
+	font-family: 'Inter', 'Segoe UI', Roboto, Arial, sans-serif;
 	font-size: 40px;
+	font-weight: 500;
 	line-height: 1;
 	cursor: pointer;
 	color: #001d22;
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
+}
+
+.pds-qty-btn--disabled,
+.pds-qty-btn:disabled {
+	cursor: not-allowed;
+	color: #8d9699;
+	background: #f9f9f9;
+	opacity: 1;
 }
 
 .pds-qty-value {

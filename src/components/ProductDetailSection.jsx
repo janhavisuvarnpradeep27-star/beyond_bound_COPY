@@ -17,6 +17,7 @@ const accordionItems = ['Information', 'Benefits', 'Ingredients']
 
 function ProductDetailSection() {
 	const [activeIndex, setActiveIndex] = useState(0)
+	const [quantity, setQuantity] = useState(1)
 	const activeImage = galleryItems[activeIndex]
 
 	return (
@@ -84,9 +85,24 @@ function ProductDetailSection() {
 
 					<div className="pds-action-row">
 						<div className="pds-qty" aria-label="Quantity selector">
-							<button type="button" className="pds-qty-btn" aria-label="Decrease quantity">−</button>
-							<span className="pds-qty-value">1</span>
-							<button type="button" className="pds-qty-btn" aria-label="Increase quantity">+</button>
+							<button
+								type="button"
+								className={`pds-qty-btn ${quantity <= 1 ? 'pds-qty-btn--disabled' : ''}`}
+								aria-label="Decrease quantity"
+								disabled={quantity <= 1}
+								onClick={() => setQuantity((prev) => Math.max(1, prev - 1))}
+							>
+								−
+							</button>
+							<span className="pds-qty-value">{quantity}</span>
+							<button
+								type="button"
+								className="pds-qty-btn"
+								aria-label="Increase quantity"
+								onClick={() => setQuantity((prev) => prev + 1)}
+							>
+								+
+							</button>
 						</div>
 						<button type="button" className="pds-shop-btn">Shop now →</button>
 					</div>
