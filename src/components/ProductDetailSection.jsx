@@ -92,7 +92,7 @@ function ProductDetailSection() {
 								disabled={quantity <= 1}
 								onClick={() => setQuantity((prev) => Math.max(1, prev - 1))}
 							>
-								−
+								<span className="pds-qty-icon pds-qty-icon--minus" aria-hidden="true" />
 							</button>
 							<span className="pds-qty-value">{quantity}</span>
 							<button
@@ -101,7 +101,10 @@ function ProductDetailSection() {
 								aria-label="Increase quantity"
 								onClick={() => setQuantity((prev) => prev + 1)}
 							>
-								+
+								<span className="pds-qty-icon pds-qty-icon--plus" aria-hidden="true">
+									<span className="pds-qty-icon-line pds-qty-icon-line--h" />
+									<span className="pds-qty-icon-line pds-qty-icon-line--v" />
+								</span>
 							</button>
 						</div>
 						<button type="button" className="pds-shop-btn">Shop now →</button>

@@ -258,11 +258,11 @@
 	border-radius: 10.42px;
 	background: #ffffff;
 	font-family: 'Inter', 'Segoe UI', Roboto, Arial, sans-serif;
-	font-size: 40px;
-	font-weight: 500;
+	font-size: 18.23px;
+	font-weight: 600;
 	line-height: 1;
 	cursor: pointer;
-	color: #001d22;
+	color: #061a1c;
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
@@ -272,19 +272,59 @@
 .pds-qty-btn--disabled,
 .pds-qty-btn:disabled {
 	cursor: not-allowed;
-	color: #8d9699;
-	background: #f9f9f9;
+	color: rgba(0, 0, 0, 0.16);
+	background: #ffffff;
 	opacity: 1;
 }
 
 .pds-qty-value {
 	font-family: 'Inter', 'Segoe UI', Roboto, Arial, sans-serif;
-	font-size: 40px;
+	font-size: 18.23px;
 	line-height: 1;
-	font-weight: 500;
-	color: #001d22;
+	font-weight: 600;
+	color: #061a1c;
 	width: 18.23px;
 	text-align: center;
+}
+
+.pds-qty-icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 23.44px;
+	height: 23.44px;
+}
+
+.pds-qty-icon--minus {
+	width: 13.67px;
+	height: 1.95px;
+	border-radius: 999px;
+	background: rgba(0, 0, 0, 0.16);
+}
+
+.pds-qty-btn:not(:disabled) .pds-qty-icon--minus {
+	background: #061a1c;
+}
+
+.pds-qty-icon--plus {
+	position: relative;
+}
+
+.pds-qty-icon-line {
+	position: absolute;
+	display: block;
+	background: #061a1c;
+	border-radius: 999px;
+}
+
+.pds-qty-icon-line--h {
+	width: 16.92px;
+	height: 1.3px;
+}
+
+.pds-qty-icon-line--v {
+	width: 1.3px;
+	height: 16.91px;
 }
 
 .pds-shop-btn {
