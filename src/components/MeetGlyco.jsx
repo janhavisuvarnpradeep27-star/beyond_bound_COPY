@@ -1,6 +1,7 @@
 
 import '../css/MeetGlyco.css'
-import bottleImg from '../../Green And Beige Elegant Product Promotion Poster (500 x 1000 px) 2.png'
+import bottleImg from '../../Gemini_Generated_Image_iwrg9hiwrg9hiwrg (1) (5) 2-1.png'
+import blurImg from '../../Blur.png'
 import reviewImageOne from '../../image 32.png'
 import reviewImageTwo from '../../image 33.png'
 import reviewImageThree from '../../image 34.png'
@@ -77,8 +78,16 @@ function MeetGlycomics() {
 					<div className="glyco-right">
 						<div className="glyco-product-wrap">
 							<img
+								src={blurImg}
+								alt=""
+								className="glyco-image glyco-image--blur"
+								loading="lazy"
+								decoding="async"
+								aria-hidden="true"
+							/>
+							<img
 								src={bottleImg}
-								alt="Green and beige elegant product promotion poster"
+								alt="Glycomics product bottle"
 								className="glyco-image glyco-image--product"
 								loading="lazy"
 								decoding="async"

@@ -342,6 +342,19 @@ display: block;
 	z-index: 10;
 }
 
+.glyco-image--blur {
+	position: absolute;
+	left: 50%;
+	top: 62%;
+	transform: translate(-50%, -50%);
+	width: min(440px, 92%);
+	height: auto;
+	object-fit: contain;
+	z-index: 1;
+	pointer-events: none;
+	opacity: 0.95;
+}
+
 @media (max-width: 1200px) {
 .glyco-inner {
 padding: 0 20px;
@@ -418,6 +431,11 @@ max-width: 420px;
 		height: auto;
 		width: min(100%, 420px);
 		max-width: 420px;
+	}
+
+	.glyco-image--blur {
+		width: min(360px, 88%);
+		top: 64%;
 	}
 }
 
