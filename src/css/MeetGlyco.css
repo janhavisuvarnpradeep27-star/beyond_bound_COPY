@@ -228,21 +228,26 @@ white-space: nowrap;
 
 .glyco-btn {
 border: none;
-width: 303px;
-height: 70px;
-padding: 10px;
+width: auto;
+height: auto;
+padding: 0;
 display: inline-flex;
 align-items: center;
 justify-content: center;
-gap: 10px;
-border-radius: 6px;
-background: #0d7377;
-color: #f4ede0;
+gap: 0;
+border-radius: 0;
+background: transparent;
+color: inherit;
 cursor: pointer;
 transition: transform 0.15s ease, box-shadow 0.2s ease;
-box-shadow:
-	0 9.4px 11.75px -7.05px rgba(0, 0, 0, 0.10),
-	0 1px 29.37px -5.87px rgba(0, 0, 0, 0.25);
+box-shadow: none;
+}
+
+.glyco-btn-image {
+	display: block;
+	width: 216px;
+	height: auto;
+	object-fit: contain;
 }
 
 .glyco-btn-content {
@@ -269,10 +274,8 @@ font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
 .glyco-btn:hover {
-transform: translateY(-1px);
-box-shadow:
-	0 9.4px 11.75px -7.05px rgba(0, 0, 0, 0.10),
-	0 1px 29.37px -5.87px rgba(0, 0, 0, 0.25);
+transform: none;
+box-shadow: none;
 }
 
 .glyco-note {
@@ -461,10 +464,14 @@ font-size: 24px;
 }
 
 .glyco-btn {
-height: 44px;
-	width: 240px;
-	padding: 8px;
+	height: auto;
+	width: auto;
+	padding: 0;
 }
+
+	.glyco-btn-image {
+		width: 186px;
+	}
 
 	.glyco-btn-content {
 		width: auto;

@@ -8,7 +8,6 @@
 }
 
 .who-inner {
-  box-shadow: inset 0 0 0 1px rgba(15, 39, 68, 0.06);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
   margin: 0 auto;
   width: 100%;
@@ -16,8 +15,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 100px;
-  box-shadow: inset 0 0 0 1px rgba(15, 39, 68, 0.08), 0 8px 20px rgba(0, 0, 0, 0.05);
+  gap: 64px;
 }
 
 .who-title-wrap {
@@ -129,49 +127,51 @@
 
 /* ── Disclaimer Styles ── */
 .who-disclaimer {
-  width: 1242px;
-  min-height: 73px;
-  background: #ffffff;
-  border: 1px solid #c7c7cc;
-  border-radius: 12px;
-  padding: 0;
+  width: min(760px, calc(100% - 32px));
+  min-height: 107.25px;
+  background: rgba(255, 255, 255, 0.45);
+  border: 1.17px solid #f0d99a;
+  border-radius: 9.33px;
+  padding: 16.67px 19.82px;
+  margin: 8px auto 0;
   box-sizing: border-box;
   display: flex;
   align-items: flex-start;
+  gap: 13.67px;
   position: relative;
 }
 
 .who-disclaimer-icon {
   width: 19px;
-  height: 31px;
-  padding-top: 2px;
-  margin-top: 21px;
-  margin-left: 25px;
+  height: 31.17px;
+  padding-top: 0;
+  margin-top: 1.17px;
+  margin-left: 0;
   flex: 0 0 auto;
 }
 
 .who-disclaimer-icon-svg {
   width: 19px;
-  height: 29px;
+  height: 30px;
   display: block;
-  color: #9ba3a7;
+  color: #7a5c1e;
 }
 
 .who-disclaimer-text {
-  width: 1124px;
-  min-height: 44px;
-  margin: 15.3px 0 13.7px 14px;
+  width: auto;
+  min-height: 73px;
+  margin: 0;
   font-family:
     "Inter",
     -apple-system,
     BlinkMacSystemFont,
     "Segoe UI",
     sans-serif;
-  font-size: 12px;
+  font-size: 15.16px;
   font-weight: 400;
-  line-height: 20.4px;
+  line-height: 24.25px;
   letter-spacing: 0;
-  color: #6b7280;
+  color: #7a5c1e;
 }
 
 /* ── Tablet (1024px) ── */
@@ -212,7 +212,7 @@
 
   .who-disclaimer-text {
     width: auto;
-    margin-right: 18px;
+    margin-right: 0;
   }
 }
 
@@ -261,21 +261,6 @@
 
   .who-disclaimer {
     width: 100%;
-    min-height: auto;
-    padding: 0 0 12px;
-    border-radius: 12px;
-    align-items: flex-start;
-  }
-
-  .who-disclaimer-icon {
-    margin-top: 16px;
-    margin-left: 16px;
-  }
-
-  .who-disclaimer-text {
-    font-size: 11px;
-    line-height: 1.6;
-    margin: 14px 14px 0 12px;
   }
 }
 
@@ -314,18 +299,7 @@
   }
 
   .who-disclaimer {
-    border-radius: 10px;
-  }
-
-  .who-disclaimer-icon {
-    margin-top: 14px;
-    margin-left: 14px;
-  }
-
-  .who-disclaimer-text {
-    font-size: 10px;
-    line-height: 1.5;
-    margin-right: 12px;
+    width: 100%;
   }
 }
 
@@ -359,13 +333,6 @@
   }
 
   .who-disclaimer {
-    border-radius: 8px;
-    border-width: 1px;
-  }
-
-  .who-disclaimer-text {
-    font-size: 9px;
-    line-height: 1.5;
-    margin-left: 10px;
+    width: 100%;
   }
 }

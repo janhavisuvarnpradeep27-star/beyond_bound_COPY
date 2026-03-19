@@ -1,6 +1,7 @@
 import '../css/aboutBeyond.css'
 import aboutImage from '../../Gemini_Generated_Image_9ceczi9ceczi9cec 1 (1).png'
 import naturalBadgeImage from '../../Container (1).png'
+import learnMoreButtonImage from '../../Component 5.png'
 
 function AboutBeyond() {
 	return (
@@ -38,7 +39,13 @@ function AboutBeyond() {
 						</div>
 
 						<button type="button" className="about-learn-btn">
-							<span className="about-learn-btn-text">Learn More</span>
+							<img
+								src={learnMoreButtonImage}
+								alt="Learn More"
+								className="about-learn-btn-image"
+								loading="lazy"
+								decoding="async"
+							/>
 						</button>
 					</div>
 				</div>

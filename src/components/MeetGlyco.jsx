@@ -4,6 +4,7 @@ import bottleImg from '../../Green And Beige Elegant Product Promotion Poster (5
 import reviewImageOne from '../../image 32.png'
 import reviewImageTwo from '../../image 33.png'
 import reviewImageThree from '../../image 34.png'
+import shopNowButtonImage from '../../Component 5 (1).png'
 
 function MeetGlycomics() {
 	return (
@@ -57,9 +58,13 @@ function MeetGlycomics() {
 						</div>
 
 						<button type="button" className="glyco-btn">
-							<span className="glyco-btn-content">
-								<span className="glyco-btn-label">Shop Now</span>
-							</span>
+							<img
+								src={shopNowButtonImage}
+								alt="Shop now"
+								className="glyco-btn-image"
+								loading="lazy"
+								decoding="async"
+							/>
 						</button>
 
 						<p className="glyco-note">
