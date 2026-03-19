@@ -78,7 +78,8 @@
 	font-weight: 400;
 	text-align: center;
 	letter-spacing: 0;
-	white-space: nowrap;
+	white-space: normal;
+	overflow-wrap: anywhere;
 }
 
 .pas-title {

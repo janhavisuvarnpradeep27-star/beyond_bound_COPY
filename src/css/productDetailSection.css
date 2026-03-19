@@ -152,14 +152,14 @@
 }
 
 .pds-line-wrap {
-	width: 468.72px;
+	width: min(468.72px, 100%);
 	height: 2.6px;
 	display: flex;
 	align-items: center;
 }
 
 .pds-line {
-	width: 468.72px;
+	width: 100%;
 	height: 1.3px;
 	background: #c7c7cc;
 	display: block;
@@ -330,7 +330,7 @@
 }
 
 .pds-shop-btn {
-	width: 340px;
+	width: min(340px, 100%);
 	height: 52px;
 	border: none;
 	border-radius: 6.62px;
@@ -461,5 +461,30 @@
 
 	.pds-description {
 		font-size: 20px;
+	}
+}
+
+@media (max-width: 640px) {
+	.pds-action-row {
+		flex-wrap: wrap;
+		height: auto;
+	}
+
+	.pds-qty {
+		width: 100%;
+	}
+
+	.pds-shop-btn {
+		width: 100%;
+	}
+
+	.pds-title {
+		font-size: clamp(28px, 8vw, 36px);
+		line-height: 1.15;
+	}
+
+	.pds-description {
+		font-size: 16px;
+		line-height: 1.5;
 	}
 }
