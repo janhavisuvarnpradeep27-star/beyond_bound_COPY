@@ -328,6 +328,10 @@
 		line-height: 1.2;
 	}
 
+	.howit-bento {
+		gap: 12px;
+	}
+
 	.howit-top {
 		grid-template-columns: 1fr 1.35fr;
 	}

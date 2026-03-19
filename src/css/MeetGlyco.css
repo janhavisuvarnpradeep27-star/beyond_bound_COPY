@@ -25,20 +25,20 @@ border: none;
 }
 
 .glyco-left {
-width: 750px;
+width: 825px;
 padding: 0;
 box-sizing: border-box;
 display: flex;
 flex-direction: column;
-align-items: center;
-text-align: center;
+align-items: flex-start;
+text-align: left;
 gap: 18px;
 }
 
 .glyco-proof {
 display: flex;
 align-items: center;
-justify-content: center;
+justify-content: flex-start;
 gap: 14.06px;
 width: 332.21px;
 height: 55.03px;
@@ -112,7 +112,7 @@ box-sizing: border-box;
 width: 16.13px;
 height: 15.56px;
 display: block;
-fill: #C9A87C;
+fill: #0D7377;
 }
 
 .glyco-customers {
@@ -143,30 +143,30 @@ white-space: nowrap;
 }
 
 .glyco-title {
-width: 750px;
-min-height: 204px;
+width: 825px;
+height: 160px;
 font-family: 'Bree Serif', Georgia, serif;
 font-size: 80px;
 font-weight: 400;
-line-height: 67.74px;
-color: #0d1b2a;
-letter-spacing: -2.71px;
+line-height: 70px !important;
+color: #0A1D33;
+letter-spacing: 1px;
 margin: 0;
 font-synthesis: none;
-display: flex;
-flex-direction: column;
-justify-content: center;
-gap: 0;
+display: block;
+}
+
+.glyco-title span {
+	display: block;
 }
 
 .glyco-price-row {
 display: flex;
 align-items: center;
-justify-content: center;
+justify-content: flex-start;
 width: 303px;
 height: 35px;
 gap: 0;
-justify-content: space-between;
 }
 
 .glyco-price-pair {
@@ -279,8 +279,8 @@ width: 474px;
 height: 39px;
 max-width: 474.31px;
 display: grid;
-place-items: center;
-text-align: center;
+place-items: start;
+text-align: left;
 font-family: 'Inter', 'Segoe UI', Roboto, Arial, sans-serif;
 font-size: 18px;
 line-height: 33.2px;
@@ -302,14 +302,23 @@ overflow: visible;
 }
 
 .glyco-right {
-width: 752.08px;
-height: 811.6px;
+width: 516px;
+height: 496px;
 position: relative;
-overflow: hidden;
+overflow: visible;
 display: flex;
-align-items: flex-start;
+align-items: center;
 justify-content: center;
-flex: 0 0 752.08px;
+flex: 0 0 516px;
+}
+
+.glyco-product-wrap {
+	position: relative;
+	width: 516px;
+	height: 496px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .glyco-image {
@@ -320,27 +329,13 @@ display: block;
 }
 
 .glyco-image--product {
-	width: 100%;
-	height: 100%;
-	max-width: 100%;
-	max-height: 100%;
-	object-fit: contain;
 	position: relative;
-	z-index: 1;
-}
-
-.glyco-image-blur {
-	position: absolute;
-	left: 50%;
-	bottom: 0;
-	transform: translateX(-50%);
-	width: 752.04px;
-	height: 158.1px;
-	object-fit: cover;
-	object-position: center 1px;
-	clip-path: inset(1px 1px 0 1px);
-	z-index: 2;
-	pointer-events: none;
+	width: 516px;
+	height: 496px;
+	max-width: 516px;
+	max-height: 496px;
+	object-fit: contain;
+	z-index: 10;
 }
 
 @media (max-width: 1200px) {
@@ -361,6 +356,11 @@ padding: 0 28px;
 .glyco-right {
 height: auto;
 width: 44%;
+}
+
+.glyco-product-wrap {
+	width: min(100%, 470px);
+	height: auto;
 }
 
 .glyco-price-new {
@@ -400,20 +400,20 @@ justify-content: center;
 		overflow: visible;
 }
 
+	.glyco-product-wrap {
+		width: min(100%, 420px);
+		height: auto;
+	}
+
 .glyco-image {
 max-width: 420px;
 }
 
 	.glyco-image--product {
+		position: relative;
 		height: auto;
 		width: min(100%, 420px);
-	}
-
-	.glyco-image-blur {
-		width: min(100%, 420px);
-		height: auto;
-		left: 50%;
-		transform: translateX(-50%);
+		max-width: 420px;
 	}
 }
 

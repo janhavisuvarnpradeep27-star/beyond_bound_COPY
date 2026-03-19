@@ -1,10 +1,9 @@
 
 import '../css/MeetGlyco.css'
-import bottleImg from '../../Gemini_Generated_Image_iwrg9hiwrg9hiwrg (1) (5) 2.png'
+import bottleImg from '../../Green And Beige Elegant Product Promotion Poster (500 x 1000 px) 2.png'
 import reviewImageOne from '../../image 32.png'
 import reviewImageTwo from '../../image 33.png'
 import reviewImageThree from '../../image 34.png'
-import blurOverlayImg from '../../Blur.png'
 
 function MeetGlycomics() {
 	return (
@@ -45,9 +44,8 @@ function MeetGlycomics() {
 						</div>
 
 						<h1 id="glyco-hero-title" className="glyco-title">
-							Your metabolism
-							<span>has a switch &amp;</span>
-							<span>We found it.</span>
+							Natural formation for
+							<span>you glucose</span>
 						</h1>
 
 						<div className="glyco-price-row" aria-label="Pricing">
@@ -72,21 +70,15 @@ function MeetGlycomics() {
 					</div>
 
 					<div className="glyco-right">
-						<img
-							src={bottleImg}
-							alt="Glycomics bottle"
-							className="glyco-image glyco-image--product"
-							loading="lazy"
-							decoding="async"
-						/>
-						<img
-							src={blurOverlayImg}
-							alt=""
-							aria-hidden="true"
-							className="glyco-image-blur"
-							loading="lazy"
-							decoding="async"
-						/>
+						<div className="glyco-product-wrap">
+							<img
+								src={bottleImg}
+								alt="Green and beige elegant product promotion poster"
+								className="glyco-image glyco-image--product"
+								loading="lazy"
+								decoding="async"
+							/>
+						</div>
 					</div>
 				</div>
 			</div>

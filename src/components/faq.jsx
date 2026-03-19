@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import '../css/faq.css'
-import faqCtaIcon from '../../Icon (9).png'
+import faqCtaIcon from '../../Icon (6).png'
 
 const faqs = [
 	{

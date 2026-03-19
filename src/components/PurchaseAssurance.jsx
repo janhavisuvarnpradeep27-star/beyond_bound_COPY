@@ -9,7 +9,6 @@ const assurances = [
 		id: 'rating',
 		title: '4.8/5 Rating',
 		subtitle: '10,000+ Customers',
-		copyWidth: '188.53px',
 		iconSrc: iconStar,
 		iconAlt: 'Star rating icon',
 	},
@@ -17,7 +16,6 @@ const assurances = [
 		id: 'checkout',
 		title: 'Secure Checkout',
 		subtitle: '256-bit SSL Encrypted',
-		copyWidth: '218.7px',
 		iconSrc: iconShield,
 		iconAlt: 'Secure checkout icon',
 	},
@@ -25,7 +23,6 @@ const assurances = [
 		id: 'shipping',
 		title: 'Fast Shipping',
 		subtitle: 'Delivered in 3-5 Days',
-		copyWidth: '207.63px',
 		iconSrc: iconShipping,
 		iconAlt: 'Fast shipping icon',
 	},
@@ -33,7 +30,6 @@ const assurances = [
 		id: 'promise',
 		title: '30-Day Promise',
 		subtitle: 'Full Satisfaction Guarantee',
-		copyWidth: '258.18px',
 		iconSrc: iconPromise,
 		iconAlt: '30-day promise icon',
 	},
@@ -48,7 +44,7 @@ function PurchaseAssurance() {
 						<div className="pas-icon-wrap">
 							<img src={item.iconSrc} alt={item.iconAlt} className="pas-icon-image" loading="lazy" decoding="async" />
 						</div>
-						<div className="pas-copy" style={{ width: item.copyWidth }}>
+						<div className="pas-copy">
 							<p className="pas-title">{item.title}</p>
 							<p className="pas-subtitle">{item.subtitle}</p>
 						</div>

@@ -2,11 +2,11 @@ import '../css/meetGlycomicsShowcase.css'
 import productShowcaseImage from '../../Gemini_Generated_Image_5ccfpd5ccfpd5ccf 2.png'
 
 const ingredients = [
+	'Karela',
 	'Berberine',
 	'Gurmar',
 	'Vijaysar',
 	'Jambu seeds',
-	'Karela',
 	'Haridra',
 	'Amakali',
 ]
