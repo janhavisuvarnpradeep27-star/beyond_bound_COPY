@@ -4,6 +4,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	--section-space: clamp(40px, 4vw, 72px);
 }
 
 .page-container > * {
@@ -17,71 +18,38 @@
 	box-sizing: border-box;
 }
 
+/* Unified container for all sections */
 .page-container :is(.navbar, .glyco-inner, .trust-inner, .about-solution, .mgs-frame, .who-inner, .pds-container, .pas-container, .wds-shell, .faq-inner, .howit-inner, .loved-container, .transform-shell, .site-footer__inner) {
-	max-width: 1800px !important;
+	max-width: 1400px !important;
 	width: 100% !important;
 	margin-left: auto !important;
 	margin-right: auto !important;
-	padding-left: 32px !important;
-	padding-right: 32px !important;
+	padding-left: 24px !important; /* px-6 baseline */
+	padding-right: 24px !important;
 	box-sizing: border-box;
 	background: transparent !important;
 	overflow: hidden;
 }
 
-@media (max-width: 1400px) {
+/* md breakpoint (768px+): increase padding to 40px (px-10) */
+@media (min-width: 768px) {
 	.page-container :is(.navbar, .glyco-inner, .trust-inner, .about-solution, .mgs-frame, .who-inner, .pds-container, .pas-container, .wds-shell, .faq-inner, .howit-inner, .loved-container, .transform-shell, .site-footer__inner) {
-		padding-left: 20px !important;
-		padding-right: 20px !important;
+		padding-left: 40px !important;
+		padding-right: 40px !important;
 	}
 }
 
-@media (max-width: 1024px) {
+/* xl breakpoint (1280px+): increase max-width to 1600px */
+@media (min-width: 1280px) {
 	.page-container :is(.navbar, .glyco-inner, .trust-inner, .about-solution, .mgs-frame, .who-inner, .pds-container, .pas-container, .wds-shell, .faq-inner, .howit-inner, .loved-container, .transform-shell, .site-footer__inner) {
-		padding-left: 16px !important;
-		padding-right: 16px !important;
+		max-width: 1600px !important;
 	}
 }
 
-@media (max-width: 768px) {
+/* 2xl breakpoint (1536px+): increase max-width to 1800px */
+@media (min-width: 1536px) {
 	.page-container :is(.navbar, .glyco-inner, .trust-inner, .about-solution, .mgs-frame, .who-inner, .pds-container, .pas-container, .wds-shell, .faq-inner, .howit-inner, .loved-container, .transform-shell, .site-footer__inner) {
-		padding-left: 12px !important;
-		padding-right: 12px !important;
-	}
-}
-
-@media (max-width: 480px) {
-	.page-container :is(.navbar, .glyco-inner, .trust-inner, .about-solution, .mgs-frame, .who-inner, .pds-container, .pas-container, .wds-shell, .faq-inner, .howit-inner, .loved-container, .transform-shell, .site-footer__inner) {
-		padding-left: 8px !important;
-		padding-right: 8px !important;
-	}
-}
-
-@media (max-width: 1400px) {
-	.page-container :is(.navbar, .glyco-inner, .trust-inner, .about-solution, .mgs-frame, .who-inner, .pds-container, .pas-container, .wds-shell, .faq-inner, .howit-inner, .loved-container, .transform-shell, .site-footer__inner) {
-		padding-left: 24px !important;
-		padding-right: 24px !important;
-	}
-}
-
-@media (max-width: 1024px) {
-	.page-container :is(.navbar, .glyco-inner, .trust-inner, .about-solution, .mgs-frame, .who-inner, .pds-container, .pas-container, .wds-shell, .faq-inner, .howit-inner, .loved-container, .transform-shell, .site-footer__inner) {
-		padding-left: 16px !important;
-		padding-right: 16px !important;
-	}
-}
-
-@media (max-width: 768px) {
-	.page-container :is(.navbar, .glyco-inner, .trust-inner, .about-solution, .mgs-frame, .who-inner, .pds-container, .pas-container, .wds-shell, .faq-inner, .howit-inner, .loved-container, .transform-shell, .site-footer__inner) {
-		padding-left: 12px !important;
-		padding-right: 12px !important;
-	}
-}
-
-@media (max-width: 480px) {
-	.page-container :is(.navbar, .glyco-inner, .trust-inner, .about-solution, .mgs-frame, .who-inner, .pds-container, .pas-container, .wds-shell, .faq-inner, .howit-inner, .loved-container, .transform-shell, .site-footer__inner) {
-		padding-left: 8px !important;
-		padding-right: 8px !important;
+		max-width: 1800px !important;
 	}
 }
 
@@ -90,6 +58,17 @@
 	padding-left: 0 !important;
 	padding-right: 0 !important;
 	box-sizing: border-box;
+}
+
+/* Consistent section alignment and spacing */
+.page-container > :is(.glyco-section, .trust-section, .about-section, .mgs-section, .who-section, .pds-section, .pas-section, .wds-section, .faq-section, .howit-section, .loved-section, .transform-section, .site-footer) {
+	margin: 0 !important;
+	padding-top: var(--section-space) !important;
+	padding-bottom: var(--section-space) !important;
+}
+
+.page-container > .navbar-wrapper {
+	margin: 0 !important;
 }
 
 .page-container :is(h1, h2, h3, h4, h5, h6, p) {
@@ -126,4 +105,70 @@
 		padding-left: 24px !important;
 		padding-right: 24px !important;
 	}
+}
+
+/* Mobile text wrapping hardening to avoid edge-case overflow */
+@media (max-width: 768px) {
+	.page-container :is(
+		.navbar-brand,
+		.pas-title,
+		.pas-subtitle,
+		.glyco-customers,
+		.glyco-note-text,
+		.mgs-ingredient,
+		.about-pill-text,
+		.about-learn-btn-text,
+		.howit-btn
+	) {
+		white-space: normal !important;
+		overflow-wrap: anywhere;
+		word-break: break-word;
+	}
+
+	.page-container :is(
+		.glyco-customers,
+		.glyco-note,
+		.about-pill,
+		.about-learn-btn,
+		.mgs-ingredient-wrap,
+		.pds-badge,
+		.howit-btn
+	) {
+		max-width: 100% !important;
+	}
+}
+
+/* Flex overflow safeguards */
+.page-container :is(
+	.navbar,
+	.navbar-links,
+	.glyco-proof,
+	.glyco-price-row,
+	.mgs-content,
+	.who-cards-container,
+	.pds-container,
+	.transform-actions,
+	.site-footer__socials,
+	.site-footer__bottom,
+	.faq-question
+) {
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.page-container :is(
+	.navbar,
+	.navbar-links,
+	.glyco-proof,
+	.glyco-price-row,
+	.mgs-content,
+	.who-cards-container,
+	.pds-container,
+	.transform-actions,
+	.site-footer__socials,
+	.site-footer__bottom,
+	.faq-question
+) > * {
+	min-width: 0;
 }

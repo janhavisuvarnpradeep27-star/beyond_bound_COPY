@@ -43,17 +43,17 @@ function MeetGlycomics() {
 							</div>
 						</div>
 
-						<h1 id="glyco-hero-title" className="glyco-title">
+						<h1 id="glyco-hero-title" className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl leading-tight break-words font-serif font-normal tracking-wide text-blue-950">
 							Natural formation for
-							<span>you glucose</span>
+							<span className="block">you glucose</span>
 						</h1>
 
-						<div className="glyco-price-row" aria-label="Pricing">
-							<div className="glyco-price-pair">
-								<span className="glyco-price-old">₹2400</span>
-								<span className="glyco-price-new">₹1925</span>
-							</div>
-							<span className="glyco-discount">Save 29%</span>
+						<div className="flex items-center gap-3 flex-wrap" aria-label="Pricing">
+							<span className="line-through text-gray-400">₹2400</span>
+							<span className="text-lg md:text-xl font-semibold">₹1925</span>
+							<span className="bg-green-100 text-green-700 px-2 py-1 rounded text-sm">
+								Save 29%
+							</span>
 						</div>
 
 						<button type="button" className="glyco-btn">
