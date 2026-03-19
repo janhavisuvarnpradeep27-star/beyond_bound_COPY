@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import '../css/faq.css'
+import faqChatIcon from '../../Icon (6).png'
 
 const faqs = [
 	{
@@ -67,16 +68,13 @@ function FAQ() {
 				</div>
 
 				<div className="faq-footer">
-					<svg viewBox="0 0 24 24" className="faq-footer-icon" aria-hidden="true">
-						<path
-							d="M20 11.5C20 16.19 16.19 20 11.5 20C10.11 20 8.8 19.67 7.65 19.07L4 20L4.93 16.35C4.33 15.2 4 13.89 4 12.5C4 7.81 7.81 4 12.5 4C17.19 4 21 7.81 21 12.5"
-							fill="none"
-							stroke="currentColor"
-							strokeWidth="1.8"
-							strokeLinecap="round"
-							strokeLinejoin="round"
-						/>
-					</svg>
+					<img
+						src={faqChatIcon}
+						alt="Chat support icon"
+						className="faq-footer-icon"
+						loading="lazy"
+						decoding="async"
+					/>
 					<p className="faq-footer-text">Still have questions?</p>
 					<button type="button" className="faq-footer-btn">Contact expert <span style={{ marginLeft: '6px' }}>→</span></button>
 				</div>

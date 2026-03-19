@@ -29,6 +29,14 @@
 	display: block;
 }
 
+/* Keep navbar logo exactly as designed (avoid global image rule regressions). */
+.page-container .navbar-logo {
+	height: 60px;
+	width: auto;
+	max-width: none;
+	flex-shrink: 0;
+}
+
 /* Keep all main wrappers fluid while preserving each section's own styling. */
 .page-container :is(
 	.navbar,
@@ -72,10 +80,8 @@
 }
 
 .page-container :is(
-	.navbar-brand,
 	.pas-title,
 	.pas-subtitle,
-	.glyco-customers,
 	.glyco-note-text,
 	.mgs-ingredient,
 	.howit-btn,
@@ -84,6 +90,27 @@
 	overflow-wrap: anywhere;
 	word-break: break-word;
 	text-wrap: pretty;
+}
+
+/* Keep hero social-proof copy exactly as original visual. */
+.page-container .glyco-customers {
+	white-space: nowrap;
+	overflow-wrap: normal;
+	word-break: normal;
+	text-wrap: nowrap;
+}
+
+.page-container .navbar-brand {
+	white-space: nowrap;
+	overflow-wrap: normal;
+	word-break: normal;
+	text-wrap: nowrap;
+}
+
+@media (max-width: 768px) {
+	.page-container .navbar-logo {
+		height: 46px;
+	}
 }
 
 @media (max-width: 1200px) {
