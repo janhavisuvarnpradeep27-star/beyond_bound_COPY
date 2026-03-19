@@ -55,15 +55,22 @@
 
 .about-pill {
 	min-height: 40px;
-	padding: 10px 14px;
-	border-radius: 6px;
-	background: #e8f2ee;
+	padding: 0;
+	border: 0;
+	background: transparent;
 	box-sizing: border-box;
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
-	gap: 8px;
+	gap: 0;
 	align-self: flex-start;
+}
+
+.about-pill-image {
+	display: block;
+	width: auto;
+	height: 40px;
+	object-fit: contain;
 }
 
 

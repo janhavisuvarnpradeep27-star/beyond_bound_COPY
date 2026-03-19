@@ -4,7 +4,6 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	--section-space: clamp(40px, 4vw, 72px);
 }
 
 .page-container > * {
@@ -57,14 +56,22 @@
 	width: 100%;
 	padding-left: 0 !important;
 	padding-right: 0 !important;
+	padding-top: clamp(20px, 2.4vw, 36px) !important;
+	padding-bottom: clamp(20px, 2.4vw, 36px) !important;
+	height: auto !important;
+	min-height: auto !important;
 	box-sizing: border-box;
 }
 
 /* Consistent section alignment and spacing */
 .page-container > :is(.glyco-section, .trust-section, .about-section, .mgs-section, .who-section, .pds-section, .pas-section, .wds-section, .faq-section, .howit-section, .loved-section, .transform-section, .site-footer) {
 	margin: 0 !important;
-	padding-top: var(--section-space) !important;
-	padding-bottom: var(--section-space) !important;
+}
+
+/* Keep sections tight and seamless (no patch-like separators) */
+.page-container > :is(.glyco-section, .trust-section, .about-section, .mgs-section, .who-section, .pds-section, .pas-section, .wds-section, .faq-section, .howit-section, .loved-section, .transform-section, .site-footer)
++ :is(.glyco-section, .trust-section, .about-section, .mgs-section, .who-section, .pds-section, .pas-section, .wds-section, .faq-section, .howit-section, .loved-section, .transform-section, .site-footer) {
+	margin-top: 0 !important;
 }
 
 .page-container > .navbar-wrapper {
