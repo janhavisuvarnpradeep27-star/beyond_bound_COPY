@@ -20,6 +20,21 @@
 	max-width: 100%;
 }
 
+.page-container .section-separator {
+	height: 24px;
+	width: 100%;
+	background: #eef1f4;
+	border-top: 1px solid #e7ebef;
+	border-bottom: 1px solid #e7ebef;
+	flex: 0 0 auto;
+}
+
+@media (max-width: 768px) {
+	.page-container .section-separator {
+		height: 16px;
+	}
+}
+
 .page-container img,
 .page-container svg,
 .page-container video,

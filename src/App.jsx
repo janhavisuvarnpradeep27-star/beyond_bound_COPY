@@ -19,6 +19,7 @@ function App() {
     <div className="page-container">
       <Navbar />
       <Meet />
+      <div className="section-separator" aria-hidden="true" />
       <Trust />
       <AboutBeyond />
       <MeetGlycomicsShowcase />

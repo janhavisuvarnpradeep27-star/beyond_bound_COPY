@@ -13,17 +13,19 @@
 	width: 1302px;
 	max-width: 100%;
 	height: 784px;
-	display: flex;
-	gap: 0;
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) minmax(420px, 468.72px);
+	column-gap: clamp(22px, 2.4vw, 36px);
+	align-items: start;
 }
 
 .pds-gallery {
-	width: 781.2px;
+	width: 100%;
 	height: 784px;
 	display: flex;
 	gap: 13.02px;
 	align-items: center;
-	padding-left: 29.53px;
+	padding-left: 18px;
 	box-sizing: border-box;
 }
 
@@ -72,9 +74,9 @@
 }
 
 .pds-main-image-wrap {
-	width: 641px;
+	width: min(641px, 100%);
 	height: 784px;
-	flex: 0 0 641px;
+	flex: 0 0 auto;
 	border-radius: 37px;
 	background: #f5f5f5;
 	display: flex;
@@ -91,12 +93,13 @@
 }
 
 .pds-details {
-	width: 468.72px;
+	width: 100%;
+	max-width: 468.72px;
 	height: auto;
 	min-height: 765.78px;
 	display: flex;
 	flex-direction: column;
-	gap: 39.06px;
+	gap: 32px;
 }
 
 .pds-badges-row {
@@ -145,10 +148,10 @@
 
 .pds-title-wrap {
 	width: 100%;
-	min-height: 124.05px;
+	min-height: auto;
 	display: flex;
 	flex-direction: column;
-	gap: 21px;
+	gap: 14px;
 }
 
 .pds-line-wrap {
@@ -156,6 +159,7 @@
 	height: 2.6px;
 	display: flex;
 	align-items: center;
+	margin-top: 4px;
 }
 
 .pds-line {
@@ -168,21 +172,21 @@
 .pds-title {
 	margin: 0;
 	font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-	font-size: 39.06px;
-	line-height: 41.01px;
+	font-size: clamp(44px, 3.6vw, 56px);
+	line-height: 1.05;
 	font-weight: 500;
-	letter-spacing: -1.63px;
-	color: #061a1c;
+	letter-spacing: -0.04em;
+	color: #0b2329;
 }
 
 .pds-price {
 	margin: 0;
 	font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-	font-size: 18.23px;
-	line-height: 18.23px;
+	font-size: 30px;
+	line-height: 1.15;
 	font-weight: 500;
-	letter-spacing: -0.78px;
-	color: #061a1c;
+	letter-spacing: -0.01em;
+	color: #0b2329;
 }
 
 .pds-description-wrap {
@@ -190,17 +194,17 @@
 	min-height: 186.82px;
 	display: flex;
 	flex-direction: column;
-	gap: 32.55px;
+	gap: 28px;
 }
 
 .pds-description {
 	margin: 0;
 	font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-	font-size: 18.23px;
-	line-height: 22.78px;
+	font-size: 18px;
+	line-height: 1.3;
 	font-weight: 400;
-	letter-spacing: -0.65px;
-	color: #061a1c;
+	letter-spacing: -0.02em;
+	color: #1a2a31;
 }
 
 .pds-size-wrap {
@@ -212,10 +216,10 @@
 .pds-size-label {
 	margin: 0;
 	font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-	font-size: 18.23px;
-	line-height: 18.23px;
+	font-size: 18px;
+	line-height: 1.2;
 	font-weight: 400;
-	color: #061a1c;
+	color: #13262d;
 }
 
 .pds-size-chip {
@@ -226,7 +230,7 @@
 	background: #e9e9e9;
 	color: #0d7377;
 	font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-	font-size: 18.23px;
+	font-size: 18px;
 	line-height: 100%;
 	font-weight: 400;
 	cursor: pointer;
@@ -346,6 +350,10 @@
 
 .pds-policy {
 	margin: 0;
+	display: inline-block;
+	width: fit-content;
+	padding-bottom: 6px;
+	border-bottom: 1px solid #c7c7cc;
 	font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 	font-size: 15.62px;
 	font-weight: 500;
@@ -357,6 +365,7 @@
 .pds-accordion-list {
 	display: flex;
 	flex-direction: column;
+	background: #ffffff;
 	border-top: 1.3px solid #c7c7cc;
 	border-bottom: 1.3px solid #c7c7cc;
 }
@@ -366,7 +375,7 @@
 	height: auto;
 	border: none;
 	border-top: 1.3px solid #c7c7cc;
-	background: transparent;
+	background: #ffffff;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -392,18 +401,36 @@
 
 	.pds-container {
 		width: 100%;
-		gap: 0;
+		height: auto;
+		grid-template-columns: minmax(0, 1fr) minmax(396px, 456px);
+		column-gap: clamp(16px, 2vw, 28px);
 		height: auto;
 	}
 
 	.pds-gallery {
-		width: calc(100% - 496px);
+		width: 100%;
 		height: auto;
 		padding-left: 0;
 	}
 
 	.pds-details {
-		width: 468.72px;
+		max-width: 456px;
+	}
+}
+
+@media (max-width: 1100px) {
+	.pds-container {
+		grid-template-columns: minmax(0, 1fr) minmax(360px, 420px);
+		column-gap: 16px;
+	}
+
+	.pds-main-image-wrap {
+		height: min(70vw, 700px);
+	}
+
+	.pds-details {
+		max-width: 420px;
+		gap: 30px;
 	}
 }
 
@@ -414,6 +441,7 @@
 	}
 
 	.pds-container {
+		display: flex;
 		flex-direction: column;
 		gap: 24px;
 		height: auto;
@@ -456,11 +484,23 @@
 	}
 
 	.pds-title {
-		font-size: 42px;
+		font-size: clamp(40px, 8.2vw, 52px);
+	}
+
+	.pds-price {
+		font-size: clamp(24px, 4.5vw, 30px);
 	}
 
 	.pds-description {
-		font-size: 20px;
+		font-size: clamp(18px, 2.3vw, 22px);
+	}
+
+	.pds-size-label {
+		font-size: clamp(17px, 2vw, 20px);
+	}
+
+	.pds-size-chip {
+		font-size: clamp(16px, 2vw, 20px);
 	}
 }
 
@@ -479,12 +519,24 @@
 	}
 
 	.pds-title {
-		font-size: clamp(28px, 8vw, 36px);
+		font-size: clamp(36px, 10vw, 44px);
 		line-height: 1.15;
 	}
 
+	.pds-price {
+		font-size: clamp(20px, 5vw, 24px);
+	}
+
 	.pds-description {
-		font-size: 16px;
+		font-size: clamp(16px, 4.2vw, 20px);
 		line-height: 1.5;
+	}
+
+	.pds-size-label {
+		font-size: clamp(16px, 4vw, 18px);
+	}
+
+	.pds-size-chip {
+		font-size: clamp(15px, 3.7vw, 18px);
 	}
 }

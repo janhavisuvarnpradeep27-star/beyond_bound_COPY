@@ -45,9 +45,9 @@ function MeetGlycomics() {
 							</div>
 						</div>
 
-						<h1 id="glyco-hero-title" className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl leading-tight break-words font-serif font-normal tracking-wide text-blue-950">
-							Natural formation for
-							<span className="block">you glucose</span>
+						<h1 id="glyco-hero-title" className="glyco-hero-title" aria-label="Natural formation for you glucose">
+							<span className="glyco-hero-line">Natural formation for</span>
+							<span className="glyco-hero-line">you glucose</span>
 						</h1>
 
 						<div className="flex items-center gap-3 flex-wrap" aria-label="Pricing">

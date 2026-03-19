@@ -86,7 +86,7 @@ function ProductDetailSection() {
             <h3 id="pds-title" className="pds-title">
               Glycomics
             </h3>
-            <p className="pds-price">₹1925</p>
+            <p className="pds-price">MRP : ₹ 1,925</p>
           </div>
 
           <div className="pds-line-wrap" aria-hidden="true">

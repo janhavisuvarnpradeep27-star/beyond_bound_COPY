@@ -1,7 +1,7 @@
 .trust-section {
 	width: 100%;
 	background: #ffffff;
-	padding: 72px 24px 64px;
+	padding: 38px 24px 44px;
 	overflow-x: hidden;
 }
 
@@ -11,7 +11,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	gap: 68px;
+	gap: 30px;
 }
 
 .trust-header {
@@ -39,9 +39,9 @@
 	margin: 0;
 	max-width: 100%;
 	font-family: 'Bree Serif', Georgia, serif;
-	font-size: 40px;
+	font-size: clamp(42px, 3.4vw, 54px);
 	font-weight: 400;
-	line-height: 1.1;
+	line-height: 1.08;
 	letter-spacing: 0;
 	color: #15284b;
 	white-space: nowrap;
@@ -54,7 +54,7 @@
 	grid-template-columns: 1fr;
 	justify-content: center;
 	align-items: center;
-	gap: 24px;
+	gap: 20px;
 	overflow: hidden;
 }
 
@@ -73,8 +73,8 @@
 }
 
 .trust-card {
-	min-height: 216px;
-	padding: 12px;
+	min-height: 146px;
+	padding: 8px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -89,53 +89,59 @@
 
 .trust-icon {
 	display: block;
-	width: 100%;
+	width: auto;
+	max-width: 100%;
+	max-height: 118px;
 	height: auto;
 	object-fit: contain;
 	filter: none;
 }
 
 .trust-icon--who {
-	max-width: 190px;
+	max-width: none;
 }
 
 .trust-icon--iso {
-	max-width: 168px;
+	max-width: none;
 }
 
 .trust-icon--quality {
-	max-width: 182px;
+	max-width: none;
 }
 
 .trust-icon--haccp {
-	max-width: 180px;
+	max-width: none;
 }
 
 .trust-icon--gmo {
-	max-width: 178px;
+	max-width: none;
 }
 
 @media (max-width: 1200px) {
 	.trust-section {
-		padding: 60px 20px 56px;
+		padding: 34px 20px 40px;
 	}
 
 	.trust-inner {
-		gap: 48px;
+		gap: 26px;
 	}
 
 	.trust-card {
-		min-height: 180px;
+		min-height: 132px;
+	}
+
+	.trust-icon {
+		max-height: 108px;
 	}
 }
 
 @media (max-width: 768px) {
 	.trust-section {
-		padding: 44px 16px 40px;
+		padding: 30px 16px 34px;
 	}
 
 	.trust-inner {
-		gap: 32px;
+		gap: 20px;
 	}
 
 	.trust-header {
@@ -148,16 +154,16 @@
 
 	.trust-title {
 		max-width: 760px;
-		font-size: 40px;
+		font-size: clamp(34px, 7.4vw, 44px);
 		font-weight: 400;
-		line-height: 1.1;
+		line-height: 1.08;
 		white-space: normal;
 		text-wrap: balance;
 	}
 
 	.trust-card {
-		min-height: 148px;
-		padding: 10px;
+		min-height: 118px;
+		padding: 8px;
 	}
 
 	.trust-icon--who,
@@ -165,17 +171,21 @@
 	.trust-icon--quality,
 	.trust-icon--haccp,
 	.trust-icon--gmo {
-		max-width: 150px;
+		max-width: none;
+	}
+
+	.trust-icon {
+		max-height: 92px;
 	}
 }
 
 @media (max-width: 480px) {
 	.trust-section {
-		padding: 36px 12px;
+		padding: 24px 12px 28px;
 	}
 
 	.trust-inner {
-		gap: 24px;
+		gap: 18px;
 	}
 
 	.trust-grid {
@@ -183,11 +193,11 @@
 	}
 
 	.trust-card {
-		min-height: 132px;
+		min-height: 104px;
 	}
 
 	.trust-title {
-		font-size: 1.7rem;
+		font-size: clamp(28px, 8vw, 36px);
 		text-wrap: balance;
 	}
 
@@ -196,6 +206,10 @@
 	.trust-icon--quality,
 	.trust-icon--haccp,
 	.trust-icon--gmo {
-		max-width: 142px;
+		max-width: none;
+	}
+
+	.trust-icon {
+		max-height: 82px;
 	}
 }
