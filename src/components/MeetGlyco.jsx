@@ -1,5 +1,5 @@
 import "../css/MeetGlyco.css";
-import bottleImg from "../../WhatsApp Image 2026-03-20 at 6.55.40 PM.jpeg";
+import bottleImg from "../../WhatsApp Image 2026-03-24 at 6.55.40 PM.jpeg";
 import blurImg from "../../Blur.png";
 import reviewImageOne from "../../image 32.png";
 import reviewImageTwo from "../../image 33.png";
@@ -69,10 +69,10 @@ function MeetGlycomics() {
             <h1
               id="glyco-hero-title"
               className="glyco-hero-title"
-              aria-label="Natural formation for your glucose"
+              aria-label="Blood Sugar Focused Metabolism Enhancer"
             >
-              <span className="glyco-hero-line">Natural formation</span>
-              <span className="glyco-hero-line">for your glucose</span>
+              <span className="glyco-hero-line">Blood Sugar Focused</span>
+              <span className="glyco-hero-line">Metabolism Enhancer</span>
             </h1>
 
             <div
